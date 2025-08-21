@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c7r6b6fo7kx0e"]
+
+[node name="Agua" type="StaticBody2D"]
+position = Vector2(-40, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

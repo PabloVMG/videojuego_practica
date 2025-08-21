@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://drhmurn12f5hb"]
+
+[ext_resource type="Texture2D" uid="uid://deceeoe6djjja" path="res://Sprites/freeknight/desert/png/Tile/1.png" id="1_fp4br"]
+[ext_resource type="Texture2D" uid="uid://dqgbck5fwqlqb" path="res://Sprites/freeknight/desert/png/Tile/2.png" id="2_wsm1g"]
+[ext_resource type="Texture2D" uid="uid://bvhojkhp2iw5b" path="res://Sprites/freeknight/desert/png/Tile/3.png" id="3_woync"]
+[ext_resource type="Texture2D" uid="uid://cod08tbwjg66o" path="res://Sprites/freeknight/desert/png/Tile/4.png" id="4_ue3oj"]
+[ext_resource type="Texture2D" uid="uid://y3k0t4g1oyfy" path="res://Sprites/freeknight/desert/png/Tile/5.png" id="5_1wg5r"]
+[ext_resource type="Texture2D" uid="uid://d2vfvcvo6tkgs" path="res://Sprites/freeknight/desert/png/Tile/6.png" id="6_gu5kt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uakuc"]
+size = Vector2(375.5, 254.125)
+
+[node name="Suelo3_2_2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(194.25, 520.938)
+shape = SubResource("RectangleShape2D_uakuc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(68, 458)
+texture = ExtResource("1_fp4br")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(196, 458)
+texture = ExtResource("2_wsm1g")
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(324, 458)
+texture = ExtResource("3_woync")
+
+[node name="4" type="Sprite2D" parent="."]
+position = Vector2(68, 586)
+texture = ExtResource("4_ue3oj")
+
+[node name="5" type="Sprite2D" parent="."]
+position = Vector2(196, 586)
+texture = ExtResource("5_1wg5r")
+
+[node name="6" type="Sprite2D" parent="."]
+position = Vector2(324, 586)
+texture = ExtResource("6_gu5kt")

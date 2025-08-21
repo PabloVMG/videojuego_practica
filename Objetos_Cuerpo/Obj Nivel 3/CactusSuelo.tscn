@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdssc7xgvr04h"]
+
+[ext_resource type="Texture2D" uid="uid://c4j2ebj3g4kga" path="res://Sprites/freeknight/freetileset/png/Tiles/17.png" id="1_83pyy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u0sps"]
+size = Vector2(128, 56)
+
+[node name="CactusSuelo" type="StaticBody2D"]
+position = Vector2(-40, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="18" type="Sprite2D" parent="."]
+position = Vector2(16, 32.5001)
+scale = Vector2(1, 0.87879)
+texture = ExtResource("1_83pyy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 49)
+shape = SubResource("RectangleShape2D_u0sps")

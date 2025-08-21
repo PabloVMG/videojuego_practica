@@ -1,0 +1,474 @@
+[gd_scene load_steps=158 format=3 uid="uid://dsulmyo1u83rf"]
+
+[ext_resource type="Script" path="res://Personajes/personaje_2d.gd" id="1_t2s5j"]
+[ext_resource type="Texture2D" uid="uid://eflc1nn5o8xd" path="res://Sprites/freeknight/dragonbones/png/Idle (1).png" id="2_trmph"]
+[ext_resource type="Texture2D" uid="uid://t5mjj8qr0pe3" path="res://Sprites/freeknight/dragonbones/png/Attack (1).png" id="3_ype8k"]
+[ext_resource type="Texture2D" uid="uid://bhfjkcgf3njtr" path="res://Sprites/freeknight/dragonbones/png/Attack (2).png" id="4_4fenh"]
+[ext_resource type="Texture2D" uid="uid://cve8mivs05x2w" path="res://Sprites/freeknight/dragonbones/png/Attack (3).png" id="5_wor0m"]
+[ext_resource type="Texture2D" uid="uid://dbvvbymcbfxii" path="res://Sprites/freeknight/dragonbones/png/Attack (4).png" id="6_fbekc"]
+[ext_resource type="Texture2D" uid="uid://e6f4ttu8jati" path="res://Sprites/freeknight/dragonbones/png/Attack (5).png" id="7_scrav"]
+[ext_resource type="Texture2D" uid="uid://c52scnu7r3a7b" path="res://Sprites/freeknight/dragonbones/png/Attack (6).png" id="8_ltstu"]
+[ext_resource type="Texture2D" uid="uid://b8ji08m0c35ow" path="res://Sprites/freeknight/dragonbones/png/Attack (7).png" id="9_lclu0"]
+[ext_resource type="Texture2D" uid="uid://c5supfsg0npkj" path="res://Sprites/freeknight/dragonbones/png/Attack (8).png" id="10_1dkq7"]
+[ext_resource type="Texture2D" uid="uid://c6nwwwvaas2ee" path="res://Sprites/freeknight/dragonbones/png/Attack (10).png" id="11_jkn1t"]
+[ext_resource type="Texture2D" uid="uid://lha42s1l2oe" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (1).png" id="12_xhcjj"]
+[ext_resource type="Texture2D" uid="uid://c2frdeg5kc5xs" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (2).png" id="13_ymx7d"]
+[ext_resource type="Texture2D" uid="uid://ck0of5u8hbfrw" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (3).png" id="14_t70lm"]
+[ext_resource type="Texture2D" uid="uid://c83cvityiaaah" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (4).png" id="15_wsrr5"]
+[ext_resource type="Texture2D" uid="uid://b2ed35bggjsoh" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (5).png" id="16_lnfwh"]
+[ext_resource type="Texture2D" uid="uid://dlrjc8na6iug3" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (6).png" id="17_ar24p"]
+[ext_resource type="Texture2D" uid="uid://cgrvkxyv5dc8t" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (7).png" id="18_8q63v"]
+[ext_resource type="Texture2D" uid="uid://c077tuwnjjovm" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (8).png" id="19_tjxx2"]
+[ext_resource type="Texture2D" uid="uid://dquc0wtuak4cr" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (9).png" id="20_qmc1c"]
+[ext_resource type="Texture2D" uid="uid://w3cpmjwo7ape" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Atack_Left/Attack (10).png" id="21_vlq0p"]
+[ext_resource type="Texture2D" uid="uid://o0b3nhtoq6cb" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (1).png" id="22_3addx"]
+[ext_resource type="Texture2D" uid="uid://bj7nwgdmqnwfd" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (2).png" id="23_47tc2"]
+[ext_resource type="Texture2D" uid="uid://pdn71h7slx2m" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (3).png" id="24_ujr7p"]
+[ext_resource type="Texture2D" uid="uid://oksvmjbi2fvd" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (4).png" id="25_7fu5n"]
+[ext_resource type="Texture2D" uid="uid://djw8o38iw3jy0" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (5).png" id="26_45qd1"]
+[ext_resource type="Texture2D" uid="uid://cxr5iak4yaxmy" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (6).png" id="27_2v441"]
+[ext_resource type="Texture2D" uid="uid://da43wsenei02a" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (7).png" id="28_d76v4"]
+[ext_resource type="Texture2D" uid="uid://dqsa3x51oscd7" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (8).png" id="29_7ykfy"]
+[ext_resource type="Texture2D" uid="uid://c65ii08k53546" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (9).png" id="30_mklt4"]
+[ext_resource type="Texture2D" uid="uid://dt7l0840j5sfm" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Walk_Left/Walk (10).png" id="31_44e87"]
+[ext_resource type="Texture2D" uid="uid://da801x00q1olo" path="res://Sprites/freeknight/dragonbones/png/Idle (2).png" id="32_jqbqv"]
+[ext_resource type="Texture2D" uid="uid://c0j4s5paxacp8" path="res://Sprites/freeknight/dragonbones/png/Idle (3).png" id="33_p6tos"]
+[ext_resource type="Texture2D" uid="uid://bplw8sgyeyjg4" path="res://Sprites/freeknight/dragonbones/png/Idle (4).png" id="34_fsh5h"]
+[ext_resource type="Texture2D" uid="uid://dqdmcm8qk86yo" path="res://Sprites/freeknight/dragonbones/png/Idle (5).png" id="35_tlws5"]
+[ext_resource type="Texture2D" uid="uid://dyt8ka1b77w03" path="res://Sprites/freeknight/dragonbones/png/Idle (6).png" id="36_6or2i"]
+[ext_resource type="Texture2D" uid="uid://cwa28kfei8c4w" path="res://Sprites/freeknight/dragonbones/png/Idle (7).png" id="37_crblk"]
+[ext_resource type="Texture2D" uid="uid://cgd4r8dttjflv" path="res://Sprites/freeknight/dragonbones/png/Idle (8).png" id="38_0f8vt"]
+[ext_resource type="Texture2D" uid="uid://bxtu146qgk7md" path="res://Sprites/freeknight/dragonbones/png/Idle (9).png" id="39_lsagl"]
+[ext_resource type="Texture2D" uid="uid://s3rbyp2umvqs" path="res://Sprites/freeknight/dragonbones/png/Idle (10).png" id="40_y01oj"]
+[ext_resource type="Texture2D" uid="uid://ukpt35vju0ha" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (1).png" id="41_8s5dp"]
+[ext_resource type="Texture2D" uid="uid://dknkgj4atrx71" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (2).png" id="42_pvm3m"]
+[ext_resource type="Texture2D" uid="uid://drolrl15i22w7" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (3).png" id="43_kgeir"]
+[ext_resource type="Texture2D" uid="uid://4rba441vkexo" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (4).png" id="44_pncwt"]
+[ext_resource type="Texture2D" uid="uid://ot4270sap607" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (5).png" id="45_f1b0r"]
+[ext_resource type="Texture2D" uid="uid://c17l5aehpgfyl" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (6).png" id="46_aorsy"]
+[ext_resource type="Texture2D" uid="uid://dfjfv38prc3gt" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (7).png" id="47_oc7kd"]
+[ext_resource type="Texture2D" uid="uid://b8101gvk2q7ut" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (8).png" id="48_c441b"]
+[ext_resource type="Texture2D" uid="uid://03f7t0gyuxcj" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (9).png" id="49_wy6oc"]
+[ext_resource type="Texture2D" uid="uid://ckbxgmfn5n7is" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Idle_Left/Idle (10).png" id="50_wa0xd"]
+[ext_resource type="Texture2D" uid="uid://b8y2vtykl7nyj" path="res://Sprites/freeknight/dragonbones/png/Dead (1).png" id="51_633kd"]
+[ext_resource type="Texture2D" uid="uid://dqiurojrgxrkh" path="res://Sprites/freeknight/dragonbones/png/Dead (2).png" id="52_r7ku4"]
+[ext_resource type="Texture2D" uid="uid://d2sxgbu5gddaw" path="res://Sprites/freeknight/dragonbones/png/Dead (3).png" id="53_do35b"]
+[ext_resource type="Texture2D" uid="uid://c4dx03360vb14" path="res://Sprites/freeknight/dragonbones/png/Dead (4).png" id="54_f01me"]
+[ext_resource type="Texture2D" uid="uid://c8w0kj51y311j" path="res://Sprites/freeknight/dragonbones/png/Dead (5).png" id="55_h88co"]
+[ext_resource type="Texture2D" uid="uid://84ys8y7qhk52" path="res://Sprites/freeknight/dragonbones/png/Dead (6).png" id="56_4ymvk"]
+[ext_resource type="Texture2D" uid="uid://c7mcv6oulbs0s" path="res://Sprites/freeknight/dragonbones/png/Dead (7).png" id="57_fyhrt"]
+[ext_resource type="Texture2D" uid="uid://b8rqpuik2jwuw" path="res://Sprites/freeknight/dragonbones/png/Dead (8).png" id="58_mnhla"]
+[ext_resource type="Texture2D" uid="uid://op3s16vwc20c" path="res://Sprites/freeknight/dragonbones/png/Dead (9).png" id="59_4q358"]
+[ext_resource type="Texture2D" uid="uid://bcd74b7p3ndke" path="res://Sprites/freeknight/dragonbones/png/Dead (10).png" id="60_3osdd"]
+[ext_resource type="Texture2D" uid="uid://jaa411uhdnyn" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (1).png" id="61_u38gw"]
+[ext_resource type="Texture2D" uid="uid://c1x3hkrpu8hpj" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (2).png" id="62_rn72d"]
+[ext_resource type="Texture2D" uid="uid://60jbui6ht5qf" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (3).png" id="63_gcy1a"]
+[ext_resource type="Texture2D" uid="uid://6gqnr76owc30" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (4).png" id="64_c2o66"]
+[ext_resource type="Texture2D" uid="uid://c2xxg0fngympm" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (5).png" id="65_bjomu"]
+[ext_resource type="Texture2D" uid="uid://ch1mj661tb61j" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (6).png" id="66_80i7u"]
+[ext_resource type="Texture2D" uid="uid://b4fwtbr7vffp5" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (7).png" id="67_iugl1"]
+[ext_resource type="Texture2D" uid="uid://duaiwhqwtr5wd" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (8).png" id="68_ybwa5"]
+[ext_resource type="Texture2D" uid="uid://brs2dwl6br8sn" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (9).png" id="69_ra55p"]
+[ext_resource type="Texture2D" uid="uid://b4lrhd8jxcmto" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Morir_Left/Dead (10).png" id="70_1gq28"]
+[ext_resource type="Texture2D" uid="uid://cwiu5hfdoik5o" path="res://Sprites/freeknight/dragonbones/png/Jump (1).png" id="71_gw87j"]
+[ext_resource type="Texture2D" uid="uid://b7j7v5fkjvvxl" path="res://Sprites/freeknight/dragonbones/png/Jump (2).png" id="72_cqdoo"]
+[ext_resource type="Texture2D" uid="uid://jmfa2pvwxqa7" path="res://Sprites/freeknight/dragonbones/png/Jump (3).png" id="73_b6ul1"]
+[ext_resource type="Texture2D" uid="uid://bnpwb8nauajji" path="res://Sprites/freeknight/dragonbones/png/Jump (4).png" id="74_0jqe2"]
+[ext_resource type="Texture2D" uid="uid://bpo1nk54ugu1r" path="res://Sprites/freeknight/dragonbones/png/Jump (5).png" id="75_s4v2n"]
+[ext_resource type="Texture2D" uid="uid://dom2htv70nmsw" path="res://Sprites/freeknight/dragonbones/png/Jump (6).png" id="76_5g6mt"]
+[ext_resource type="Texture2D" uid="uid://ximhe8ubmatu" path="res://Sprites/freeknight/dragonbones/png/Jump (7).png" id="77_gmp1s"]
+[ext_resource type="Texture2D" uid="uid://cw5shjrbikcj4" path="res://Sprites/freeknight/dragonbones/png/Jump (8).png" id="78_u86bk"]
+[ext_resource type="Texture2D" uid="uid://ifv7u48ubts4" path="res://Sprites/freeknight/dragonbones/png/Jump (9).png" id="79_y3qv2"]
+[ext_resource type="Texture2D" uid="uid://6h0hc3s81i05" path="res://Sprites/freeknight/dragonbones/png/Jump (10).png" id="80_oficf"]
+[ext_resource type="Texture2D" uid="uid://cc5n4djerevcd" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (1).png" id="81_rp5sl"]
+[ext_resource type="Texture2D" uid="uid://chx14s2erl005" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (2).png" id="82_dcyax"]
+[ext_resource type="Texture2D" uid="uid://cpxs8w51r33tq" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (3).png" id="83_2ptpm"]
+[ext_resource type="Texture2D" uid="uid://bxj8m3kobql0n" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (4).png" id="84_2yh8i"]
+[ext_resource type="Texture2D" uid="uid://cs5xchcm2ykcb" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (5).png" id="85_1yvs7"]
+[ext_resource type="Texture2D" uid="uid://bh4o5bgli4d1d" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (6).png" id="86_ng4al"]
+[ext_resource type="Texture2D" uid="uid://b1y7bgk76s8ii" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (7).png" id="87_g8vm4"]
+[ext_resource type="Texture2D" uid="uid://svq6pxcsc1pa" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (8).png" id="88_6587y"]
+[ext_resource type="Texture2D" uid="uid://b450hnff1n0eg" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (9).png" id="89_4kijw"]
+[ext_resource type="Texture2D" uid="uid://cae0ujhlkualb" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Atack_Left/JumpAttack (10).png" id="90_tt2g0"]
+[ext_resource type="Texture2D" uid="uid://iiq1ebluyxs4" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (1).png" id="91_0fxwj"]
+[ext_resource type="Texture2D" uid="uid://bhu2q8yhqtmd8" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (2).png" id="92_mwlrv"]
+[ext_resource type="Texture2D" uid="uid://dp1qigb3viu82" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (3).png" id="93_cxadj"]
+[ext_resource type="Texture2D" uid="uid://cwdbelm5x1hdr" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (4).png" id="94_prd5h"]
+[ext_resource type="Texture2D" uid="uid://b46ob8u3oob6u" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (5).png" id="95_6pjbv"]
+[ext_resource type="Texture2D" uid="uid://dtresgy00ie6b" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (6).png" id="96_s36no"]
+[ext_resource type="Texture2D" uid="uid://tju1daqqqqj3" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (7).png" id="97_ra0l6"]
+[ext_resource type="Texture2D" uid="uid://feqvykx5oiac" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (8).png" id="98_ipip6"]
+[ext_resource type="Texture2D" uid="uid://c10iuo70gua7x" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (9).png" id="99_6mxbe"]
+[ext_resource type="Texture2D" uid="uid://b1ma2pmk3xs2v" path="res://Sprites/freeknight/dragonbones/png/Sprites invertidos/Saltar_Left/Jump (10).png" id="100_fjb6k"]
+[ext_resource type="Texture2D" uid="uid://c8wncs24ani8n" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (1).png" id="101_y7i2h"]
+[ext_resource type="Texture2D" uid="uid://7yk2h565cg44" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (2).png" id="102_u1oqi"]
+[ext_resource type="Texture2D" uid="uid://bqy5pnv1gj7pa" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (3).png" id="103_7pwdh"]
+[ext_resource type="Texture2D" uid="uid://bh00jqxrdw4i" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (4).png" id="104_sferl"]
+[ext_resource type="Texture2D" uid="uid://os6tejbnucap" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (5).png" id="105_8nwlj"]
+[ext_resource type="Texture2D" uid="uid://b8ny0rg5p1blk" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (6).png" id="106_anjn5"]
+[ext_resource type="Texture2D" uid="uid://bpbeaagbbswuv" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (7).png" id="107_ice7n"]
+[ext_resource type="Texture2D" uid="uid://dyonej8nu0c0b" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (8).png" id="108_ej62q"]
+[ext_resource type="Texture2D" uid="uid://bdc23tr7h0lk5" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (9).png" id="109_wfpru"]
+[ext_resource type="Texture2D" uid="uid://15e0r5ic733m" path="res://Sprites/freeknight/dragonbones/png/JumpAttack (10).png" id="110_qvsdo"]
+[ext_resource type="Texture2D" uid="uid://dol0emlt54f4g" path="res://Sprites/freeknight/dragonbones/png/Walk (1).png" id="111_jxs8u"]
+[ext_resource type="Texture2D" uid="uid://87sfvhfngh1q" path="res://Sprites/freeknight/dragonbones/png/Walk (2).png" id="112_u1u8f"]
+[ext_resource type="Texture2D" uid="uid://cw3ga28yyj77i" path="res://Sprites/freeknight/dragonbones/png/Walk (3).png" id="113_j408p"]
+[ext_resource type="Texture2D" uid="uid://df4fnfqidpa5h" path="res://Sprites/freeknight/dragonbones/png/Walk (4).png" id="114_ho6mb"]
+[ext_resource type="Texture2D" uid="uid://7gg7g3wm7pxt" path="res://Sprites/freeknight/dragonbones/png/Walk (5).png" id="115_njye4"]
+[ext_resource type="Texture2D" uid="uid://dl8a4thkd842n" path="res://Sprites/freeknight/dragonbones/png/Walk (6).png" id="116_nf2s1"]
+[ext_resource type="Texture2D" uid="uid://c528jjha66ibx" path="res://Sprites/freeknight/dragonbones/png/Walk (7).png" id="117_5qayn"]
+[ext_resource type="Texture2D" uid="uid://bmljukwqdri4s" path="res://Sprites/freeknight/dragonbones/png/Walk (8).png" id="118_h53el"]
+[ext_resource type="Texture2D" uid="uid://rwljysrt414o" path="res://Sprites/freeknight/dragonbones/png/Walk (9).png" id="119_uufpe"]
+[ext_resource type="Texture2D" uid="uid://3sdcdtll25p8" path="res://Sprites/freeknight/dragonbones/png/Walk (10).png" id="120_vwkhd"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tw05b"]
+animation = &"Atacar"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ho6ye"]
+animation = &"Atacar_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mobba"]
+animation = &"Caminar_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_5jr18"]
+animation = &"Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_i8r18"]
+animation = &"Idle_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3sqnt"]
+animation = &"Muerte"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_j77o8"]
+animation = &"Saltar"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_17kht"]
+animation = &"Saltar_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xm7h6"]
+animation = &"caminar"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vbxol"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_m8o1h"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hat23"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2wenu"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_l6hyt"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0q6j6"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_crejc"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2d5lq"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_1hp4u"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_kt5sq"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7lfs0"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_t6xdq"]
+states/Atacar/node = SubResource("AnimationNodeAnimation_tw05b")
+states/Atacar/position = Vector2(95.78, -308.507)
+states/Atacar_Left/node = SubResource("AnimationNodeAnimation_ho6ye")
+states/Atacar_Left/position = Vector2(381.201, -418.38)
+states/Caminar_Left/node = SubResource("AnimationNodeAnimation_mobba")
+states/Caminar_Left/position = Vector2(749.201, -170.463)
+states/End/position = Vector2(-62.799, 16.537)
+states/Idle/node = SubResource("AnimationNodeAnimation_5jr18")
+states/Idle/position = Vector2(95.78, -170.463)
+states/Idle_Left/node = SubResource("AnimationNodeAnimation_i8r18")
+states/Idle_Left/position = Vector2(381.201, -302.38)
+states/Muerte/node = SubResource("AnimationNodeAnimation_3sqnt")
+states/Muerte/position = Vector2(-46.799, -60.507)
+states/Saltar/node = SubResource("AnimationNodeAnimation_j77o8")
+states/Saltar/position = Vector2(95.78, 25.493)
+states/Saltar_Left/node = SubResource("AnimationNodeAnimation_17kht")
+states/Saltar_Left/position = Vector2(381.201, -170.463)
+states/Start/position = Vector2(-114, -170.463)
+states/caminar/node = SubResource("AnimationNodeAnimation_xm7h6")
+states/caminar/position = Vector2(583.78, -170.463)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_vbxol"), "Idle", "Saltar", SubResource("AnimationNodeStateMachineTransition_m8o1h"), "Saltar", "Idle", SubResource("AnimationNodeStateMachineTransition_hat23"), "Idle", "Atacar", SubResource("AnimationNodeStateMachineTransition_2wenu"), "Atacar", "Idle", SubResource("AnimationNodeStateMachineTransition_l6hyt"), "Idle", "Muerte", SubResource("AnimationNodeStateMachineTransition_0q6j6"), "Muerte", "Idle", SubResource("AnimationNodeStateMachineTransition_crejc"), "Idle_Left", "Atacar_Left", SubResource("AnimationNodeStateMachineTransition_2d5lq"), "Atacar_Left", "Idle_Left", SubResource("AnimationNodeStateMachineTransition_1hp4u"), "Idle_Left", "Saltar_Left", SubResource("AnimationNodeStateMachineTransition_kt5sq"), "Saltar_Left", "Idle_Left", SubResource("AnimationNodeStateMachineTransition_7lfs0")]
+graph_offset = Vector2(-197.799, -315.909)
+
+[sub_resource type="Animation" id="Animation_ggo05"]
+resource_name = "Atacar"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_ype8k"), ExtResource("4_4fenh"), ExtResource("5_wor0m"), ExtResource("6_fbekc"), ExtResource("7_scrav"), ExtResource("8_ltstu"), ExtResource("9_lclu0"), ExtResource("10_1dkq7"), ExtResource("10_1dkq7"), ExtResource("11_jkn1t")]
+}
+
+[sub_resource type="Animation" id="Animation_ouds2"]
+resource_name = "Atacar_Left"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("12_xhcjj"), ExtResource("13_ymx7d"), ExtResource("14_t70lm"), ExtResource("15_wsrr5"), ExtResource("16_lnfwh"), ExtResource("17_ar24p"), ExtResource("18_8q63v"), ExtResource("19_tjxx2"), ExtResource("20_qmc1c"), ExtResource("21_vlq0p")]
+}
+
+[sub_resource type="Animation" id="Animation_vf024"]
+resource_name = "Caminar_Left"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("22_3addx"), ExtResource("23_47tc2"), ExtResource("24_ujr7p"), ExtResource("25_7fu5n"), ExtResource("26_45qd1"), ExtResource("27_2v441"), ExtResource("28_d76v4"), ExtResource("29_7ykfy"), ExtResource("30_mklt4"), ExtResource("31_44e87")]
+}
+
+[sub_resource type="Animation" id="Animation_lalbn"]
+resource_name = "Idle"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_trmph"), ExtResource("32_jqbqv"), ExtResource("33_p6tos"), ExtResource("34_fsh5h"), ExtResource("35_tlws5"), ExtResource("36_6or2i"), ExtResource("37_crblk"), ExtResource("38_0f8vt"), ExtResource("39_lsagl"), ExtResource("40_y01oj")]
+}
+
+[sub_resource type="Animation" id="Animation_acvl4"]
+resource_name = "Idle_Left"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("41_8s5dp"), ExtResource("42_pvm3m"), ExtResource("43_kgeir"), ExtResource("44_pncwt"), ExtResource("45_f1b0r"), ExtResource("46_aorsy"), ExtResource("47_oc7kd"), ExtResource("48_c441b"), ExtResource("49_wy6oc"), ExtResource("50_wa0xd")]
+}
+
+[sub_resource type="Animation" id="Animation_nkqjo"]
+resource_name = "Muerte"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("51_633kd"), ExtResource("52_r7ku4"), ExtResource("53_do35b"), ExtResource("54_f01me"), ExtResource("55_h88co"), ExtResource("56_4ymvk"), ExtResource("57_fyhrt"), ExtResource("58_mnhla"), ExtResource("59_4q358"), ExtResource("60_3osdd")]
+}
+
+[sub_resource type="Animation" id="Animation_u4e44"]
+resource_name = "Muerte_Left"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("61_u38gw"), ExtResource("62_rn72d"), ExtResource("63_gcy1a"), ExtResource("64_c2o66"), ExtResource("65_bjomu"), ExtResource("66_80i7u"), ExtResource("67_iugl1"), ExtResource("68_ybwa5"), ExtResource("69_ra55p"), ExtResource("70_1gq28")]
+}
+
+[sub_resource type="Animation" id="Animation_5owqi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_trmph")]
+}
+
+[sub_resource type="Animation" id="Animation_22pej"]
+resource_name = "Saltar"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("71_gw87j"), ExtResource("72_cqdoo"), ExtResource("73_b6ul1"), ExtResource("74_0jqe2"), ExtResource("75_s4v2n"), ExtResource("76_5g6mt"), ExtResource("77_gmp1s"), ExtResource("78_u86bk"), ExtResource("79_y3qv2"), ExtResource("80_oficf")]
+}
+
+[sub_resource type="Animation" id="Animation_2ya0l"]
+resource_name = "Saltar_Atacar_Left"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("81_rp5sl"), ExtResource("82_dcyax"), ExtResource("83_2ptpm"), ExtResource("84_2yh8i"), ExtResource("85_1yvs7"), ExtResource("86_ng4al"), ExtResource("87_g8vm4"), ExtResource("88_6587y"), ExtResource("89_4kijw"), ExtResource("90_tt2g0")]
+}
+
+[sub_resource type="Animation" id="Animation_36beq"]
+resource_name = "Saltar_Left"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("91_0fxwj"), ExtResource("92_mwlrv"), ExtResource("93_cxadj"), ExtResource("94_prd5h"), ExtResource("95_6pjbv"), ExtResource("96_s36no"), ExtResource("97_ra0l6"), ExtResource("98_ipip6"), ExtResource("99_6mxbe"), ExtResource("100_fjb6k")]
+}
+
+[sub_resource type="Animation" id="Animation_qhc35"]
+resource_name = "Saltar_atacar"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("101_y7i2h"), ExtResource("102_u1oqi"), ExtResource("103_7pwdh"), ExtResource("104_sferl"), ExtResource("105_8nwlj"), ExtResource("106_anjn5"), ExtResource("107_ice7n"), ExtResource("108_ej62q"), ExtResource("109_wfpru"), ExtResource("110_qvsdo")]
+}
+
+[sub_resource type="Animation" id="Animation_hymhu"]
+resource_name = "caminar"
+length = 0.9
+loop_mode = 1
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("111_jxs8u"), ExtResource("112_u1u8f"), ExtResource("113_j408p"), ExtResource("114_ho6mb"), ExtResource("115_njye4"), ExtResource("116_nf2s1"), ExtResource("117_5qayn"), ExtResource("118_h53el"), ExtResource("119_uufpe"), ExtResource("120_vwkhd")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0bn5g"]
+_data = {
+"Atacar": SubResource("Animation_ggo05"),
+"Atacar_Left": SubResource("Animation_ouds2"),
+"Caminar_Left": SubResource("Animation_vf024"),
+"Idle": SubResource("Animation_lalbn"),
+"Idle_Left": SubResource("Animation_acvl4"),
+"Muerte": SubResource("Animation_nkqjo"),
+"Muerte_Left": SubResource("Animation_u4e44"),
+"RESET": SubResource("Animation_5owqi"),
+"Saltar": SubResource("Animation_22pej"),
+"Saltar_Atacar_Left": SubResource("Animation_2ya0l"),
+"Saltar_Left": SubResource("Animation_36beq"),
+"Saltar_atacar": SubResource("Animation_qhc35"),
+"caminar": SubResource("Animation_hymhu")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3tx57"]
+size = Vector2(322.5, 492.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mr4kf"]
+size = Vector2(335, 485)
+
+[node name="Personaje2d" type="CharacterBody2D"]
+position = Vector2(509, 319)
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_t2s5j")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.78109, 0.83239)
+texture = ExtResource("2_trmph")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_t6xdq")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0bn5g")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-18.75, 8.75)
+shape = SubResource("RectangleShape2D_3tx57")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-17.5, 7.5)
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_mr4kf")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.885
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

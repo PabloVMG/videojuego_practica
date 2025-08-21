@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://crej3k0e3qb2a"]
+
+[ext_resource type="Texture2D" uid="uid://b5gvucbcdqrcp" path="res://Sprites/freeknight/Dinosaurio/Dino 1.png" id="1_h7ood"]
+[ext_resource type="Script" path="res://Personajes/Dinosaurio_2d.gd" id="1_kndua"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vyfs6"]
+radius = 0.00034809
+height = 0.000766192
+
+[node name="Dinosaurio" type="CharacterBody2D"]
+position = Vector2(3, -1)
+script = ExtResource("1_kndua")
+
+[node name="Dino1" type="Sprite2D" parent="."]
+position = Vector2(8, 30)
+scale = Vector2(-0.843834, 0.92768)
+texture = ExtResource("1_h7ood")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-3, -1)
+scale = Vector2(164622, -234630)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(7.28943e-05, -0.000140647)
+rotation = 0.0663681
+shape = SubResource("CapsuleShape2D_vyfs6")
+
+[node name="FirePoint" type="Node2D" parent="."]
+position = Vector2(-2, -9.53674e-07)
+scale = Vector2(1.32, -2.56)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(14, 35)
+build_mode = 1
+polygon = PackedVector2Array(-5, -101, -16, -93, -21, -83, -23, -79, -46, -80, -59, -72, -61, -58, -55, -40, -50, -34, -49, -25, -42, -24, -25, -22, -17, -22, -7, -21, -1, -17, -6, -10, -14, 4, -19, 8, -22, 13, -23, 20, -26, 27, -22, 32, -21, 40, -14, 51, -6, 57, -4, 62, -21, 69, -32, 78, -18, 79, 18, 81, 41, 79, 39, 68, 32, 61, 31, 50, 42, 42, 59, 37, 82, 24, 88, 14, 91, -3, 83, -6, 78, 1, 64, 9, 47, 8, 36, -2, 33, -14, 34, -25, 33, -37, 29, -53, 26, -68, 21, -75, 14, -91)
+
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]

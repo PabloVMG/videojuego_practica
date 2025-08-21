@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckibwscju4lw0"]
+
+[ext_resource type="Texture2D" uid="uid://2umghsvtis0g" path="res://Sprites/freeknight/freetileset/png/Object/Sign_1.png" id="1_l505s"]
+
+[node name="Letrero" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(40.25, -7.49997)
+scale = Vector2(2.27778, 1.24615)
+texture = ExtResource("1_l505s")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -24.0
+offset_top = -48.0
+offset_right = 101.0
+offset_bottom = 1.0
+text = "Cuidado Dragón 
+Furioso!!"
+horizontal_alignment = 1
+max_lines_visible = 6

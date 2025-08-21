@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo3s0qw7xclkc"]
+
+[ext_resource type="Texture2D" uid="uid://lpykya61reda" path="res://Sprites/freeknight/freetileset/png/Object/Tree_1.png" id="1_e6x24"]
+
+[node name="Tronco arbol" type="Sprite2D"]
+texture = ExtResource("1_e6x24")

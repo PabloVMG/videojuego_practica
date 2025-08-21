@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmuegu8wchk3b"]
+
+[ext_resource type="Texture2D" uid="uid://07mv0fb5vbll" path="res://Sprites/freeknight/graveyard/png/BG.png" id="1_kaiyt"]
+
+[node name="FondoNivel4" type="Node2D"]
+position = Vector2(511, 33)
+
+[node name="Bg4" type="Sprite2D" parent="."]
+position = Vector2(-751, 332)
+scale = Vector2(0.7535, 0.645888)
+texture = ExtResource("1_kaiyt")
+
+[node name="Bg5" type="Sprite2D" parent="."]
+position = Vector2(756, 332)
+scale = Vector2(0.7535, 0.645888)
+texture = ExtResource("1_kaiyt")
+
+[node name="Bg6" type="Sprite2D" parent="."]
+position = Vector2(2263, 332)
+scale = Vector2(0.7535, 0.645888)
+texture = ExtResource("1_kaiyt")
+
+[node name="Bg7" type="Sprite2D" parent="."]
+position = Vector2(3769, 332)
+scale = Vector2(0.7535, 0.645888)
+texture = ExtResource("1_kaiyt")
+
+[node name="Bg8" type="Sprite2D" parent="."]
+position = Vector2(5273, 333)
+scale = Vector2(0.7535, 0.645888)
+texture = ExtResource("1_kaiyt")

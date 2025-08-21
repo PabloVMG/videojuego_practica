@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw5exjerckbqu"]
+
+[ext_resource type="Texture2D" uid="uid://b021h0quvvo0k" path="res://Sprites/freeknight/freetileset/png/Object/Bush (2).png" id="1_yswt5"]
+
+[node name="Arbusto2" type="Node2D"]
+
+[node name="Bush(2)" type="Sprite2D" parent="."]
+texture = ExtResource("1_yswt5")

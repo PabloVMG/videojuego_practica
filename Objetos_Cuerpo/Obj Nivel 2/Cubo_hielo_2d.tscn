@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs7unor16p4f5"]
+
+[ext_resource type="Texture2D" uid="uid://di0ki57xhlfqc" path="res://Sprites/freeknight/wintertileset/png/Object/IceBox.png" id="1_li2j1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_drqiu"]
+size = Vector2(98, 98)
+
+[node name="CuboHIelo" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 8)
+shape = SubResource("RectangleShape2D_drqiu")
+
+[node name="IceBox" type="Sprite2D" parent="."]
+position = Vector2(-3.62501, 7.87499)
+scale = Vector2(0.962871, 0.972772)
+texture = ExtResource("1_li2j1")

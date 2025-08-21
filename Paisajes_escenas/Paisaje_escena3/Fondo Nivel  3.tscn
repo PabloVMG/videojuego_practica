@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8t32mg5ue3dj"]
+
+[ext_resource type="Texture2D" uid="uid://efap7fqmpbm6" path="res://Sprites/freeknight/desert/png/BG.png" id="1_27wh3"]
+
+[node name="FondoNivel3" type="Node2D"]
+position = Vector2(240, 8)
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(-643, 164)
+texture = ExtResource("1_27wh3")
+
+[node name="Bg2" type="Sprite2D" parent="."]
+position = Vector2(3197, 164)
+texture = ExtResource("1_27wh3")
+
+[node name="Bg3" type="Sprite2D" parent="."]
+position = Vector2(637, 164)
+texture = ExtResource("1_27wh3")
+
+[node name="Bg4" type="Sprite2D" parent="."]
+position = Vector2(1917, 164)
+texture = ExtResource("1_27wh3")

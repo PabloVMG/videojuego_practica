@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://drylblmcp51bt"]
+
+[ext_resource type="Texture2D" uid="uid://cewfi55el42o2" path="res://Sprites/freeknight/wintertileset/png/Object/SnowMan.png" id="1_jft14"]
+
+[node name="MonoNieve" type="Node2D"]
+
+[node name="SnowMan" type="Sprite2D" parent="."]
+position = Vector2(0, -2)
+scale = Vector2(0.727979, 0.7)
+texture = ExtResource("1_jft14")

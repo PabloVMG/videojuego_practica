@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://betgfvg5vjdpi"]
+
+[ext_resource type="Texture2D" uid="uid://bi85s1jy6skwq" path="res://Sprites/freeknight/wintertileset/png/Object/Sign_1.png" id="1_pwd13"]
+
+[node name="Letrero_inicio_2" type="StaticBody2D"]
+
+[node name="Sign1" type="Sprite2D" parent="."]
+position = Vector2(-3, 1)
+scale = Vector2(1, 0.861702)
+texture = ExtResource("1_pwd13")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -21.0
+offset_top = -20.0
+offset_right = 21.0
+offset_bottom = 3.0
+text = "Inicio"
+horizontal_alignment = 1
+max_lines_visible = 6
+visible_characters = 6

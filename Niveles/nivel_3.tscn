@@ -1,0 +1,695 @@
+[gd_scene load_steps=33 format=3 uid="uid://yhdnddc4bb2b"]
+
+[ext_resource type="Script" path="res://Niveles/nivel_3.gd" id="1_njkrs"]
+[ext_resource type="PackedScene" uid="uid://c8t32mg5ue3dj" path="res://Paisajes_escenas/Paisaje_escena3/Fondo Nivel  3.tscn" id="1_qsvw0"]
+[ext_resource type="PackedScene" uid="uid://decfkx8qutc7j" path="res://Paisajes_escenas/Paisaje_escena1/letrero_inicio.tscn" id="2_2wwfc"]
+[ext_resource type="Texture2D" uid="uid://cl1m3d8y0j7tu" path="res://Sprites/freeknight/desert/png/Objects/Skeleton.png" id="2_dqjl4"]
+[ext_resource type="PackedScene" uid="uid://bql6roqkdipbc" path="res://Personajes/personaje_2d.tscn" id="2_lb6ra"]
+[ext_resource type="PackedScene" uid="uid://csnsx76u32ors" path="res://Objetos_Cuerpo/Obj Nivel 3/suelo_3.1.tscn" id="3_mphol"]
+[ext_resource type="Texture2D" uid="uid://b0q60dwab500h" path="res://Sprites/freeknight/desert/png/Objects/Bush (1).png" id="6_26p08"]
+[ext_resource type="Texture2D" uid="uid://ce2kuq2wqrnm5" path="res://Sprites/freeknight/desert/png/Objects/Cactus (1).png" id="8_5hj1a"]
+[ext_resource type="PackedScene" uid="uid://bi2o5hnxmnceh" path="res://Objetos_Cuerpo/Obj Nivel 1/Agua.tscn" id="8_vxtyl"]
+[ext_resource type="Texture2D" uid="uid://bj7yyf6x1ovxl" path="res://Sprites/freeknight/desert/png/Objects/Cactus (2).png" id="9_4t0g7"]
+[ext_resource type="Texture2D" uid="uid://c2u6cr6akld8x" path="res://Sprites/freeknight/freetileset/png/Object/Sign_2.png" id="9_751uf"]
+[ext_resource type="Texture2D" uid="uid://cngna4ulvlvgy" path="res://Sprites/freeknight/desert/png/Objects/Bush (2).png" id="9_vsqa1"]
+[ext_resource type="Texture2D" uid="uid://b4bxlgjqn80qj" path="res://Sprites/freeknight/desert/png/Objects/Cactus (3).png" id="10_5hbxh"]
+[ext_resource type="Texture2D" uid="uid://b7u2rmc7gggla" path="res://Sprites/freeknight/desert/png/Objects/Grass (1).png" id="12_hc7sf"]
+[ext_resource type="PackedScene" uid="uid://dxiqs6r75jy0l" path="res://Paisajes_escenas/Paisaje_escena2/letrero_Dragon_2.tscn" id="13_7j47w"]
+[ext_resource type="Texture2D" uid="uid://c3ua8dwg6na1k" path="res://Sprites/freeknight/desert/png/Objects/Grass (2).png" id="13_74lnh"]
+[ext_resource type="Texture2D" uid="uid://bhsrdeetbv56c" path="res://Sprites/freeknight/desert/png/Objects/Stone.png" id="14_7p3ma"]
+[ext_resource type="PackedScene" uid="uid://drhmurn12f5hb" path="res://Objetos_Cuerpo/Obj Nivel 3/suelo_3.2.tscn" id="15_dxrlv"]
+[ext_resource type="Texture2D" uid="uid://b33rkjwjycp2a" path="res://Sprites/freeknight/desert/png/Objects/Tree.png" id="16_8xnb5"]
+[ext_resource type="PackedScene" uid="uid://fqaap55lojop" path="res://Objetos_Cuerpo/Obj Nivel 3/suelo_3.3.tscn" id="16_r56wo"]
+[ext_resource type="PackedScene" uid="uid://b18k0x0646m5g" path="res://Objetos_Cuerpo/Obj Nivel 1/Caja.tscn" id="17_ratjq"]
+[ext_resource type="PackedScene" uid="uid://dru0nufctsox5" path="res://Objetos_Cuerpo/Obj Nivel 3/Caja_Desierto.tscn" id="18_amwcb"]
+[ext_resource type="PackedScene" uid="uid://c4s68aveoec2r" path="res://Objetos_Cuerpo/Obj Nivel 3/Suelo_flotando_3.2.tscn" id="20_r70h1"]
+[ext_resource type="PackedScene" uid="uid://bvlor7ca64ypj" path="res://Objetos_Cuerpo/Obj Nivel 3/Suelo_flotando_3.1.tscn" id="21_7ojk8"]
+[ext_resource type="PackedScene" uid="uid://crej3k0e3qb2a" path="res://Personajes/Dinosaurio_2d.tscn" id="22_5hi0t"]
+[ext_resource type="PackedScene" uid="uid://d37vduyj1anuc" path="res://Objetos_Cuerpo/Obj Nivel 1/suelo_sin imagen.tscn" id="25_0o0wn"]
+[ext_resource type="PackedScene" uid="uid://dv5ssjsi05aoe" path="res://texto_dev_ops.tscn" id="26_d3syt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sms2v"]
+line_spacing = 1.0
+font_size = 8
+
+[sub_resource type="FontVariation" id="FontVariation_ypj7s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o7mcp"]
+font = SubResource("FontVariation_ypj7s")
+font_size = 150
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74bxa"]
+size = Vector2(24, 287.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5yxy"]
+size = Vector2(176, 565.5)
+
+[node name="Nivel3" type="Node2D"]
+position = Vector2(19, 0)
+script = ExtResource("1_njkrs")
+
+[node name="FondoNivel3" parent="." instance=ExtResource("1_qsvw0")]
+position = Vector2(1244, 8)
+
+[node name="Skeleton" type="Sprite2D" parent="."]
+position = Vector2(404, 540)
+texture = ExtResource("2_dqjl4")
+
+[node name="Letrero" parent="." instance=ExtResource("2_2wwfc")]
+position = Vector2(215, 548)
+
+[node name="Bush(1)" type="Sprite2D" parent="."]
+position = Vector2(1148, 371)
+texture = ExtResource("6_26p08")
+
+[node name="Cactus(1)" type="Sprite2D" parent="."]
+position = Vector2(1833, 183)
+texture = ExtResource("8_5hj1a")
+
+[node name="Cactus(1)2" type="Sprite2D" parent="."]
+position = Vector2(3151, 154)
+texture = ExtResource("8_5hj1a")
+
+[node name="Cactus(2)" type="Sprite2D" parent="."]
+position = Vector2(1853.5, 484.25)
+scale = Vector2(0.585714, 0.766667)
+texture = ExtResource("9_4t0g7")
+
+[node name="Cactus(3)" type="Sprite2D" parent="."]
+position = Vector2(2292, 223)
+texture = ExtResource("10_5hbxh")
+
+[node name="Cactus(3)2" type="Sprite2D" parent="."]
+position = Vector2(4060, 208)
+texture = ExtResource("10_5hbxh")
+
+[node name="Cactus(3)3" type="Sprite2D" parent="."]
+position = Vector2(4539, 418)
+texture = ExtResource("10_5hbxh")
+
+[node name="SenalSiguienteNivel3" type="Sprite2D" parent="."]
+position = Vector2(5017, 270)
+scale = Vector2(2.03226, 1.60156)
+texture = ExtResource("9_751uf")
+
+[node name="Label" type="Label" parent="SenalSiguienteNivel3"]
+anchors_preset = -1
+anchor_left = 0.00268862
+anchor_top = 0.00954625
+anchor_right = 0.135043
+anchor_bottom = 0.00954625
+offset_left = -35.5953
+offset_top = -21.6841
+offset_right = 8.19874
+offset_bottom = 3.31589
+text = "Siguiente
+nivel"
+label_settings = SubResource("LabelSettings_sms2v")
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Agua9" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(3397, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua9"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua11" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(3269, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua11"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua12" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(3141, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua12"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua13" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(3013, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua13"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua14" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(2886, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua14"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua15" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(2758, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua15"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua16" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(2630, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua16"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua32" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(2503, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua32"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua10" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(4418, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua10"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua17" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(4290, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua17"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua18" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(4162, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua18"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua19" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(4034, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua19"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua20" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(3907, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua20"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua21" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(3779, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua21"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua22" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(3651, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua22"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua23" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(3523, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua23"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua34" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(758, 632)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua34"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua41" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(2024, 618)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua41"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua42" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(1896, 618)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua42"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua43" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(1768, 618)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua43"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua44" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(1640, 618)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua44"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua45" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(1513, 618)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua45"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua46" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(1385, 618)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua46"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua47" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(1257, 618)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua47"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua27" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(5057, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua27"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua28" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(4930, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua28"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua29" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(4802, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua29"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua30" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(4674, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua30"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua31" parent="." instance=ExtResource("8_vxtyl")]
+position = Vector2(4546, 601)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua31"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Bush(2)" type="Sprite2D" parent="."]
+position = Vector2(1713, 636)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)2" type="Sprite2D" parent="."]
+position = Vector2(1576, 635)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)3" type="Sprite2D" parent="."]
+position = Vector2(1438, 636)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)4" type="Sprite2D" parent="."]
+position = Vector2(1292, 635)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)26" type="Sprite2D" parent="."]
+position = Vector2(780.5, 650)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)5" type="Sprite2D" parent="."]
+position = Vector2(1856, 637)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)6" type="Sprite2D" parent="."]
+position = Vector2(1996, 641)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)7" type="Sprite2D" parent="."]
+position = Vector2(2948, 624)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)8" type="Sprite2D" parent="."]
+position = Vector2(2811, 623)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)9" type="Sprite2D" parent="."]
+position = Vector2(2673, 624)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)10" type="Sprite2D" parent="."]
+position = Vector2(2527, 623)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)11" type="Sprite2D" parent="."]
+position = Vector2(3091, 625)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)12" type="Sprite2D" parent="."]
+position = Vector2(3231, 629)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)13" type="Sprite2D" parent="."]
+position = Vector2(3777, 630)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)14" type="Sprite2D" parent="."]
+position = Vector2(3640, 629)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)15" type="Sprite2D" parent="."]
+position = Vector2(3502, 630)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)16" type="Sprite2D" parent="."]
+position = Vector2(3356, 629)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)17" type="Sprite2D" parent="."]
+position = Vector2(3920, 631)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)18" type="Sprite2D" parent="."]
+position = Vector2(4060, 635)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)19" type="Sprite2D" parent="."]
+position = Vector2(4617, 630)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)20" type="Sprite2D" parent="."]
+position = Vector2(4480, 629)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)21" type="Sprite2D" parent="."]
+position = Vector2(4342, 630)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)22" type="Sprite2D" parent="."]
+position = Vector2(4196, 629)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)23" type="Sprite2D" parent="."]
+position = Vector2(4760, 631)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)24" type="Sprite2D" parent="."]
+position = Vector2(4900, 635)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Bush(2)25" type="Sprite2D" parent="."]
+position = Vector2(5040.5, 645)
+texture = ExtResource("9_vsqa1")
+metadata/_edit_group_ = true
+
+[node name="Grass(1)" type="Sprite2D" parent="."]
+position = Vector2(2405, 253)
+texture = ExtResource("12_hc7sf")
+
+[node name="Grass(1)2" type="Sprite2D" parent="."]
+position = Vector2(4669, 437)
+texture = ExtResource("12_hc7sf")
+
+[node name="Grass(1)3" type="Sprite2D" parent="."]
+position = Vector2(3661, 461)
+texture = ExtResource("12_hc7sf")
+
+[node name="Grass(2)" type="Sprite2D" parent="."]
+position = Vector2(147, 528)
+texture = ExtResource("13_74lnh")
+
+[node name="Stone" type="Sprite2D" parent="."]
+position = Vector2(954, 399)
+texture = ExtResource("14_7p3ma")
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(585, 430)
+texture = ExtResource("16_8xnb5")
+
+[node name="Tree3" type="Sprite2D" parent="."]
+position = Vector2(4876, 161)
+texture = ExtResource("16_8xnb5")
+
+[node name="Tree2" type="Sprite2D" parent="."]
+position = Vector2(2157, 136.5)
+scale = Vector2(1, 1.02692)
+texture = ExtResource("16_8xnb5")
+
+[node name="Letrero_Dragon_2" parent="." instance=ExtResource("13_7j47w")]
+position = Vector2(4200, 223)
+
+[node name="Suelo_3_1_2D" parent="." instance=ExtResource("3_mphol")]
+position = Vector2(-54, 37)
+
+[node name="Suelo3_2_2D" parent="." instance=ExtResource("15_dxrlv")]
+position = Vector2(828, 23)
+
+[node name="Suelo3_3_2D" parent="." instance=ExtResource("16_r56wo")]
+position = Vector2(2082, 97)
+
+[node name="Caja desierto" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(1648, 424)
+
+[node name="Caja desierto2" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(1850, 290)
+
+[node name="Caja desierto15" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(2003, 357)
+
+[node name="SueloFlotante3_1_2D" parent="." instance=ExtResource("20_r70h1")]
+position = Vector2(2693, 449)
+
+[node name="SueloFlotante3_1_2D2" parent="." instance=ExtResource("21_7ojk8")]
+position = Vector2(3029, 227)
+
+[node name="SueloFlotante3_1_2D3" parent="." instance=ExtResource("20_r70h1")]
+position = Vector2(3641, 499)
+
+[node name="SueloFlotante3_1_2D7" parent="." instance=ExtResource("20_r70h1")]
+position = Vector2(1422, 157)
+
+[node name="SueloFlotante3_1_2D4" parent="." instance=ExtResource("21_7ojk8")]
+position = Vector2(4126, 277)
+
+[node name="SueloFlotante3_1_2D5" parent="." instance=ExtResource("20_r70h1")]
+position = Vector2(4635, 480)
+
+[node name="SueloFlotante3_1_2D6" parent="." instance=ExtResource("20_r70h1")]
+position = Vector2(4997, 310)
+
+[node name="Caja desierto3" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(2820, 348)
+
+[node name="Caja desierto4" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(2698, 349)
+
+[node name="Caja desierto6" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(2759, 348)
+
+[node name="Caja desierto9" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(1495, 131)
+
+[node name="Caja desierto12" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(1789, 290)
+
+[node name="Caja desierto13" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(1175, 297)
+
+[node name="Caja desierto11" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(1434, 131)
+
+[node name="Caja desierto7" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(2758, 283)
+
+[node name="Caja desierto8" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(2700, 283)
+
+[node name="Caja desierto5" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(2820, 284)
+
+[node name="Caja desierto14" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3334, 539)
+
+[node name="Caja desierto17" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3716, 340)
+
+[node name="Caja desierto21" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3135, 538)
+
+[node name="Caja desierto28" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(4151, 499)
+
+[node name="Caja desierto31" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(5047, 559)
+
+[node name="Caja desierto29" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(4347, 585)
+
+[node name="Caja desierto30" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3994, 532)
+
+[node name="Caja desierto32" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3862, 582)
+
+[node name="Caja desierto22" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(2899, 538)
+
+[node name="Caja desierto23" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3308, 364)
+
+[node name="Caja desierto25" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3594, 341)
+
+[node name="Caja desierto18" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3655, 340)
+
+[node name="Caja desierto19" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3654, 275)
+
+[node name="Caja desierto20" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3716, 276)
+
+[node name="Caja desierto33" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3446, 208)
+
+[node name="Caja desierto34" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(4949, 499)
+
+[node name="Caja desierto35" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(4072, 167)
+
+[node name="Caja desierto44" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(4457, 173)
+
+[node name="Caja desierto26" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(4629, 103)
+
+[node name="Caja desierto27" parent="." instance=ExtResource("18_amwcb")]
+position = Vector2(3849, 313)
+
+[node name="Caja2D36" parent="." instance=ExtResource("17_ratjq")]
+position = Vector2(4773, 353)
+
+[node name="Caja2D37" parent="." instance=ExtResource("17_ratjq")]
+position = Vector2(3855, 153)
+
+[node name="Personaje2d" parent="." groups=["player"] instance=ExtResource("2_lb6ra")]
+position = Vector2(67, 342)
+
+[node name="Timer2" type="Timer" parent="Personaje2d"]
+wait_time = 5.596
+one_shot = true
+
+[node name="DeathLabel" type="Label" parent="Personaje2d"]
+visible = false
+custom_minimum_size = Vector2(0, 20)
+offset_right = 40.0
+offset_bottom = 23.0
+text = "HAS MUERTO
+
+REINICIANDO NIVEL ..."
+label_settings = SubResource("LabelSettings_o7mcp")
+horizontal_alignment = 1
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("22_5hi0t")]
+position = Vector2(4634, 344)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("22_5hi0t")]
+position = Vector2(4873, 169)
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2(182, 1.52588e-05)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(4864, 147.375)
+shape = SubResource("RectangleShape2D_74bxa")
+
+[node name="Suelo2D4" parent="." instance=ExtResource("25_0o0wn")]
+position = Vector2(-572, 710)
+rotation = -1.57787
+scale = Vector2(0.641924, 0.998944)
+
+[node name="Suelo2D5" parent="." instance=ExtResource("25_0o0wn")]
+position = Vector2(4544, 688)
+rotation = -1.57787
+scale = Vector2(0.641924, 0.998944)
+
+[node name="TextoDevOps" parent="." instance=ExtResource("26_d3syt")]
+position = Vector2(3869, 237)
+texto = "[center][b]Herramientas y Tecnologías DevOps[/b]Para implementar DevOps de manera efectiva, se utilizan diversas herramientas y tecnologías. Algunas de las herramientas populares incluyen Jenkins para la integración continua, Docker para la contenedorización, Kubernetes para la orquestación de contenedores, Ansible y Terraform para la gestión de la configuración, y Prometheus y Grafana para el monitoreo y la visualización. Estas herramientas facilitan la automatización y la colaboración entre los equipos de desarrollo y operaciones."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextoDevOps"]
+position = Vector2(196, 10.25)
+shape = SubResource("RectangleShape2D_v5yxy")
+debug_color = Color(0.938517, 0.186822, 0.419692, 0.42)
+
+[connection signal="body_entered" from="Area2D3" to="." method="_on_area_2d_3_body_entered"]

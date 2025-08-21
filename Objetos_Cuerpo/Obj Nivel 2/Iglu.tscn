@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b36yfveff6ilg"]
+
+[ext_resource type="Texture2D" uid="uid://klywtf0c7bg" path="res://Sprites/freeknight/wintertileset/png/Object/Igloo.png" id="1_ue84s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u0sps"]
+size = Vector2(128, 56)
+
+[node name="Agua" type="StaticBody2D"]
+position = Vector2(-40, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-48, 200)
+shape = SubResource("RectangleShape2D_u0sps")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-96, 72, -87, 32, -70, -16, -48, -51, -19, -76, 6, -91, 51, -95, 82, -87, 107, -69, 128, -46, 144, -22, 162, -21, 173, -16, 170, 1, 159, -1, 144, -3, 143, -3, 132, -4, 125, -25, 102, -42, 59, -71, 11, -61, -31, -28, -43, -3, -58, 22, -69, 48, -75, 61, -75, 62, -74, 71)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Igloo" type="Sprite2D" parent="."]
+z_as_relative = false
+position = Vector2(55, -11)
+scale = Vector2(-0.584287, 0.852292)
+texture = ExtResource("1_ue84s")

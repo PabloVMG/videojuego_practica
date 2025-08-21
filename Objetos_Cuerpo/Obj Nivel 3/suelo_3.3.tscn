@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://fqaap55lojop"]
+
+[ext_resource type="Texture2D" uid="uid://deceeoe6djjja" path="res://Sprites/freeknight/desert/png/Tile/1.png" id="1_alxmm"]
+[ext_resource type="Texture2D" uid="uid://dqgbck5fwqlqb" path="res://Sprites/freeknight/desert/png/Tile/2.png" id="2_46ab4"]
+[ext_resource type="Texture2D" uid="uid://bvhojkhp2iw5b" path="res://Sprites/freeknight/desert/png/Tile/3.png" id="3_kdfqo"]
+[ext_resource type="Texture2D" uid="uid://cod08tbwjg66o" path="res://Sprites/freeknight/desert/png/Tile/4.png" id="4_3iwwm"]
+[ext_resource type="Texture2D" uid="uid://y3k0t4g1oyfy" path="res://Sprites/freeknight/desert/png/Tile/5.png" id="5_vvbcf"]
+[ext_resource type="Texture2D" uid="uid://d2vfvcvo6tkgs" path="res://Sprites/freeknight/desert/png/Tile/6.png" id="6_suim2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uakuc"]
+size = Vector2(375.5, 383.125)
+
+[node name="Suelo3_3_2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(195.25, 363.438)
+shape = SubResource("RectangleShape2D_uakuc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(69, 236)
+texture = ExtResource("1_alxmm")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(197, 236)
+texture = ExtResource("2_46ab4")
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(325, 236)
+texture = ExtResource("3_kdfqo")
+
+[node name="4" type="Sprite2D" parent="."]
+position = Vector2(69, 364)
+texture = ExtResource("4_3iwwm")
+
+[node name="5" type="Sprite2D" parent="."]
+position = Vector2(197, 364)
+texture = ExtResource("5_vvbcf")
+
+[node name="6" type="Sprite2D" parent="."]
+position = Vector2(325, 364)
+texture = ExtResource("6_suim2")
+
+[node name="7" type="Sprite2D" parent="."]
+position = Vector2(69, 492)
+texture = ExtResource("4_3iwwm")
+
+[node name="8" type="Sprite2D" parent="."]
+position = Vector2(197, 492)
+texture = ExtResource("5_vvbcf")
+
+[node name="9" type="Sprite2D" parent="."]
+position = Vector2(325, 492)
+texture = ExtResource("6_suim2")

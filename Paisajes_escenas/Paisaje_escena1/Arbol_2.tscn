@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c757gb8uqcxvi"]
+
+[ext_resource type="Texture2D" uid="uid://dgm8054cgw0ae" path="res://Sprites/freeknight/freetileset/png/Object/Tree_2.png" id="1_vqbgb"]
+
+[node name="Arbol_2" type="Node2D"]
+
+[node name="Tree2" type="Sprite2D" parent="."]
+position = Vector2(-30.5, 7.25)
+scale = Vector2(0.783688, 0.739203)
+texture = ExtResource("1_vqbgb")

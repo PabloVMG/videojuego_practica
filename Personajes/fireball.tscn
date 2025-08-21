@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvcacjfu1gucv"]
+
+[ext_resource type="Script" path="res://Personajes/fireball.gd" id="1_jfx36"]
+[ext_resource type="Texture2D" uid="uid://b3m3i6fha1mln" path="res://Sprites/freeknight/Dinosaurio/Fireball.png" id="2_pqrsh"]
+
+[node name="Fireball" type="RigidBody2D"]
+position = Vector2(208, 43)
+script = ExtResource("1_jfx36")
+
+[node name="Fireball" type="Sprite2D" parent="."]
+position = Vector2(-101.4, 14)
+rotation = -3.13815
+scale = Vector2(0.399673, 0.377954)
+texture = ExtResource("2_pqrsh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-102.4, 14)
+scale = Vector2(0.628341, 0.537201)
+build_mode = 1
+polygon = PackedVector2Array(32, -28, 11, -26, 19, -33, -2, -35, -26, -29, -40, -13, -48.6996, -5.5845, -38, 13, -22, 28, -3, 32, 9, 35, 24, 34, 16, 21, 30, 24, 12, 11, 40, 14, 18, -3, 40, -13, 17, -16)

@@ -1,0 +1,126 @@
+[gd_scene load_steps=10 format=3 uid="uid://cfk7nf0rtg0se"]
+
+[ext_resource type="Script" path="res://Niveles/menu.gd" id="1_jdh4f"]
+[ext_resource type="Texture2D" uid="uid://bflkryjwiwp8s" path="res://Sprites/freeknight/Menu/Menu.jpg" id="2_y1obl"]
+[ext_resource type="PackedScene" uid="uid://dsulmyo1u83rf" path="res://Personajes/personaje_2dMenu.tscn" id="3_tx7of"]
+[ext_resource type="PackedScene" uid="uid://d37vduyj1anuc" path="res://Objetos_Cuerpo/Obj Nivel 1/suelo_sin imagen.tscn" id="4_v7fgi"]
+[ext_resource type="Texture2D" uid="uid://dv2fk45v2ji8j" path="res://Sprites/freeknight/Menu/Left.png" id="5_do5b8"]
+[ext_resource type="Texture2D" uid="uid://b4n2pokf67u4i" path="res://Sprites/freeknight/Menu/Right.png" id="6_lekxe"]
+[ext_resource type="Texture2D" uid="uid://dubdfneywuduh" path="res://Sprites/freeknight/Menu/Space_bar.png" id="7_lmyrp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sjuc4"]
+line_spacing = 1.0
+font_size = 35
+font_color = Color(0.147672, 0.147672, 0.147672, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_v4jrk"]
+font_size = 25
+font_color = Color(0.329158, 0.329158, 0.329158, 1)
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_jdh4f")
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(579, 324.5)
+scale = Vector2(1.57692, 1.58293)
+texture = ExtResource("2_y1obl")
+
+[node name="ButtonNivel1" type="Button" parent="."]
+texture_filter = 1
+texture_repeat = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1011.0
+offset_top = 157.0
+offset_right = 1104.0
+offset_bottom = 215.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "INICIO"
+
+[node name="Personaje2d" parent="." instance=ExtResource("3_tx7of")]
+position = Vector2(629, 186)
+
+[node name="Suelo2D" parent="." instance=ExtResource("4_v7fgi")]
+position = Vector2(8, -28)
+
+[node name="Suelo2D2" parent="." instance=ExtResource("4_v7fgi")]
+position = Vector2(-557, 706)
+rotation = -1.57787
+scale = Vector2(0.641924, 0.998944)
+
+[node name="Suelo2D3" parent="." instance=ExtResource("4_v7fgi")]
+position = Vector2(623, 670)
+rotation = -1.57787
+scale = Vector2(0.641924, 0.998944)
+
+[node name="Left" type="Sprite2D" parent="."]
+position = Vector2(51.9688, 158)
+scale = Vector2(0.0586685, 0.0594667)
+texture = ExtResource("5_do5b8")
+
+[node name="Right" type="Sprite2D" parent="."]
+position = Vector2(50.9687, 106)
+scale = Vector2(0.0588188, 0.0697675)
+texture = ExtResource("6_lekxe")
+
+[node name="SpaceBar" type="Sprite2D" parent="."]
+position = Vector2(143, 217)
+scale = Vector2(0.14, 0.195312)
+texture = ExtResource("7_lmyrp")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 212.0
+offset_top = -8.0
+offset_right = 1024.0
+offset_bottom = 141.0
+text = "A continuación te explicamos que es
+ \"Devops\""
+label_settings = SubResource("LabelSettings_sjuc4")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 85.0
+offset_top = 87.0
+offset_right = 236.0
+offset_bottom = 122.0
+text = "A la derecha"
+label_settings = SubResource("LabelSettings_v4jrk")
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 981.0
+offset_top = 74.0
+offset_right = 1132.0
+offset_bottom = 147.0
+text = "Para iniciar 
+presiona"
+label_settings = SubResource("LabelSettings_v4jrk")
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 47.0
+offset_top = 30.0
+offset_right = 210.0
+offset_bottom = 65.0
+text = "Movimientos "
+label_settings = SubResource("LabelSettings_v4jrk")
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 142.0
+offset_right = 232.0
+offset_bottom = 177.0
+text = "A la izquierda"
+label_settings = SubResource("LabelSettings_v4jrk")
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 271.0
+offset_top = 201.0
+offset_right = 438.0
+offset_bottom = 236.0
+text = "Saltar"
+label_settings = SubResource("LabelSettings_v4jrk")
+
+[connection signal="pressed" from="ButtonNivel1" to="." method="_on_button_nivel_1_pressed"]

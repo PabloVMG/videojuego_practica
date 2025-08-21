@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4s68aveoec2r"]
+
+[ext_resource type="Texture2D" uid="uid://kimp42nvlc37" path="res://Sprites/freeknight/desert/png/Tile/14.png" id="1_rvle3"]
+[ext_resource type="Texture2D" uid="uid://c37d80tb0maae" path="res://Sprites/freeknight/desert/png/Tile/16.png" id="3_g6s3r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uakuc"]
+size = Vector2(255.25, 52.0625)
+
+[node name="SueloFlotante3_1_2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-44.625, 6.96877)
+shape = SubResource("RectangleShape2D_uakuc")
+metadata/_edit_group_ = true
+
+[node name="14" type="Sprite2D" parent="."]
+position = Vector2(-109, 27)
+texture = ExtResource("1_rvle3")
+
+[node name="16" type="Sprite2D" parent="."]
+position = Vector2(19, 27)
+texture = ExtResource("3_g6s3r")

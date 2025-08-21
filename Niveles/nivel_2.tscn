@@ -1,0 +1,442 @@
+[gd_scene load_steps=26 format=3 uid="uid://c3pyap85dcxct"]
+
+[ext_resource type="Script" path="res://Niveles/nivel_2.gd" id="1_ff63r"]
+[ext_resource type="PackedScene" uid="uid://dp8iy5bqe3s2l" path="res://Paisajes_escenas/Paisaje_escena2/Fondo Nivel 2.tscn" id="1_xao2e"]
+[ext_resource type="PackedScene" uid="uid://b2iibre455620" path="res://Paisajes_escenas/Paisaje_escena2/Arbol_2.tscn" id="2_4i6kr"]
+[ext_resource type="PackedScene" uid="uid://xpeabu3rvmgd" path="res://Objetos_Cuerpo/Obj Nivel 2/suelo_2.1.tscn" id="2_m45js"]
+[ext_resource type="PackedScene" uid="uid://bi2o5hnxmnceh" path="res://Objetos_Cuerpo/Obj Nivel 1/Agua.tscn" id="2_tdd2g"]
+[ext_resource type="PackedScene" uid="uid://banpkevb1nvpf" path="res://Paisajes_escenas/Paisaje_escena2/ArbolTriple_2.tscn" id="3_wg0kp"]
+[ext_resource type="PackedScene" uid="uid://df424b72h0mx1" path="res://Objetos_Cuerpo/Obj Nivel 2/suelo_2.3.tscn" id="4_qikmn"]
+[ext_resource type="PackedScene" uid="uid://bx27vx6yyx2b" path="res://Objetos_Cuerpo/Obj Nivel 2/suelo_2.2.tscn" id="6_mg5st"]
+[ext_resource type="PackedScene" uid="uid://bql6roqkdipbc" path="res://Personajes/personaje_2d.tscn" id="7_d5bou"]
+[ext_resource type="PackedScene" uid="uid://b36yfveff6ilg" path="res://Objetos_Cuerpo/Obj Nivel 2/Iglu.tscn" id="8_57dek"]
+[ext_resource type="PackedScene" uid="uid://betgfvg5vjdpi" path="res://Paisajes_escenas/Paisaje_escena2/letrero_inicio_2.tscn" id="9_sj86f"]
+[ext_resource type="PackedScene" uid="uid://bmh766y4his31" path="res://Objetos_Cuerpo/Obj Nivel 2/Suelo_flotando_2.1.tscn" id="10_iuqcm"]
+[ext_resource type="PackedScene" uid="uid://dxiqs6r75jy0l" path="res://Paisajes_escenas/Paisaje_escena2/letrero_Dragon_2.tscn" id="10_mcdv0"]
+[ext_resource type="PackedScene" uid="uid://d3yhwnp1bmuwe" path="res://Objetos_Cuerpo/Obj Nivel 2/Suelo_flotando_2.tscn" id="11_w3kv8"]
+[ext_resource type="PackedScene" uid="uid://drylblmcp51bt" path="res://Paisajes_escenas/Paisaje_escena2/MonoNieve.tscn" id="12_mgmxj"]
+[ext_resource type="PackedScene" uid="uid://b18k0x0646m5g" path="res://Objetos_Cuerpo/Obj Nivel 1/Caja.tscn" id="12_vdoyp"]
+[ext_resource type="PackedScene" uid="uid://bs7unor16p4f5" path="res://Objetos_Cuerpo/Obj Nivel 2/Cubo_hielo_2d.tscn" id="13_dg8k0"]
+[ext_resource type="PackedScene" uid="uid://crej3k0e3qb2a" path="res://Personajes/Dinosaurio_2d.tscn" id="17_fu3l4"]
+[ext_resource type="Texture2D" uid="uid://c2u6cr6akld8x" path="res://Sprites/freeknight/freetileset/png/Object/Sign_2.png" id="18_oakhf"]
+[ext_resource type="PackedScene" uid="uid://dv5ssjsi05aoe" path="res://texto_dev_ops.tscn" id="20_b3mkq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xdo16"]
+line_spacing = 1.0
+font_size = 8
+
+[sub_resource type="FontVariation" id="FontVariation_8nbt3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ajjic"]
+line_spacing = 2.0
+font = SubResource("FontVariation_8nbt3")
+font_size = 150
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3q6mp"]
+size = Vector2(30.75, 85)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7223i"]
+size = Vector2(114.5, 394.25)
+
+[node name="Nivel2" type="Node2D"]
+position = Vector2(5, 3)
+script = ExtResource("1_ff63r")
+
+[node name="Fondo Nivel 2" parent="." instance=ExtResource("1_xao2e")]
+position = Vector2(-530, -53)
+
+[node name="Arbol_2" parent="." instance=ExtResource("2_4i6kr")]
+position = Vector2(2770, 393)
+
+[node name="Arbol_3" parent="." instance=ExtResource("2_4i6kr")]
+position = Vector2(2366, 265)
+
+[node name="Arbol_4" parent="." instance=ExtResource("2_4i6kr")]
+position = Vector2(831, 219)
+
+[node name="Arbol_5" parent="." instance=ExtResource("2_4i6kr")]
+position = Vector2(4324, 397)
+
+[node name="Arbol_triple2" parent="." instance=ExtResource("3_wg0kp")]
+position = Vector2(1497, 160)
+
+[node name="Arbol_triple" parent="." instance=ExtResource("3_wg0kp")]
+position = Vector2(227, 409)
+
+[node name="Letrero_inicio_2" parent="." instance=ExtResource("9_sj86f")]
+position = Vector2(316, 488)
+
+[node name="Letrero_Dragon_2" parent="." instance=ExtResource("10_mcdv0")]
+position = Vector2(4078, 496)
+
+[node name="Agua9" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(4013, 624)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua9"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua11" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(3885, 624)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua11"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua12" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(3757, 624)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua12"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua13" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(3629, 624)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua13"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua14" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(3502, 624)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua14"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua15" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(3374, 624)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua15"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua16" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(3246, 624)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua16"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua17" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(3118, 624)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua17"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua20" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(2031, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua20"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua21" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(1903, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua21"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua22" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(1775, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua22"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua23" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(1647, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua23"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua24" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(1045, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua24"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua25" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(917, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua25"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua26" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(789, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua26"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua27" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(661, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua27"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua28" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(533, 614)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua28"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua10" parent="." instance=ExtResource("2_tdd2g")]
+position = Vector2(4631, 629)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua10"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="SenalSiguienteNivel2" type="Sprite2D" parent="Agua10"]
+position = Vector2(416, -161)
+scale = Vector2(2.77419, 2.32813)
+texture = ExtResource("18_oakhf")
+
+[node name="Label" type="Label" parent="Agua10/SenalSiguienteNivel2"]
+anchors_preset = -1
+anchor_left = 0.00268862
+anchor_top = 0.00954625
+anchor_right = 0.135043
+anchor_bottom = 0.00954625
+offset_left = -32.969
+offset_top = -20.3693
+offset_right = 10.8251
+offset_bottom = 4.63066
+text = "Siguiente
+nivel"
+label_settings = SubResource("LabelSettings_xdo16")
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Suelo2_1_2D" parent="." instance=ExtResource("2_m45js")]
+position = Vector2(-17, 11)
+
+[node name="Suelo2_3_2D" parent="." instance=ExtResource("4_qikmn")]
+position = Vector2(1105, 15)
+
+[node name="Suelo2_1_2D2" parent="." instance=ExtResource("2_m45js")]
+position = Vector2(2581, 13)
+
+[node name="Suelo2_1_2D3" parent="." instance=ExtResource("2_m45js")]
+position = Vector2(4083, 13)
+
+[node name="Suelo2_1_2D6" parent="." instance=ExtResource("2_m45js")]
+position = Vector2(4698, 8)
+
+[node name="Suelo2_1_2D7" parent="." instance=ExtResource("2_m45js")]
+position = Vector2(5130, 9)
+
+[node name="Suelo2_2_2D" parent="." instance=ExtResource("6_mg5st")]
+position = Vector2(2095, 13)
+
+[node name="Agua18" parent="." instance=ExtResource("8_57dek")]
+position = Vector2(-9, 458)
+
+[node name="Suelo2_3_2D2" parent="." instance=ExtResource("10_iuqcm")]
+position = Vector2(2545, 216)
+
+[node name="Suelo2_1_2D4" parent="." instance=ExtResource("11_w3kv8")]
+position = Vector2(756, 377)
+
+[node name="Suelo2_1_2D5" parent="." instance=ExtResource("11_w3kv8")]
+position = Vector2(3633, 289)
+
+[node name="MonoNieve" parent="." instance=ExtResource("12_mgmxj")]
+position = Vector2(2688, 118)
+scale = Vector2(-1.04716, 1.08)
+
+[node name="Caja_" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(3160, 274)
+
+[node name="Caja_5" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(3061, 362)
+
+[node name="Caja_3" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(3270, 378)
+
+[node name="Caja_4" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(3159, 360)
+
+[node name="Caja_2" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(2436, 159)
+
+[node name="CuboHielo2" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(2523, 159)
+
+[node name="CuboHielo3" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(2777, 156)
+
+[node name="Caja2D" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(1733, 409)
+
+[node name="Caja2D2" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(1990, 431)
+
+[node name="Caja2D3" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(2030, 209)
+
+[node name="CuboHielo5" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(1876, 325)
+
+[node name="CuboHielo9" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(981, 239)
+
+[node name="MonoNieve2" parent="." instance=ExtResource("12_mgmxj")]
+position = Vector2(764, 290)
+
+[node name="Caja2D5" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3798, 229)
+
+[node name="Caja2D6" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3720, 229)
+
+[node name="Caja2D7" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3643, 229)
+
+[node name="Caja2D8" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3565, 229)
+
+[node name="Caja2D10" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3721, 154)
+
+[node name="Caja2D11" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3644, 154)
+
+[node name="Caja2D12" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(4114, 304)
+
+[node name="Caja2D16" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3365, 527)
+
+[node name="Caja2D17" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3942, 566)
+
+[node name="Caja2D19" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(2850, 495)
+
+[node name="Caja2D21" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(2775, 495)
+
+[node name="Caja2D22" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(2775, 420)
+
+[node name="Caja2D24" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(2928, 494)
+
+[node name="CuboHielo12" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(1478, 238)
+
+[node name="CuboHielo14" parent="." instance=ExtResource("13_dg8k0")]
+position = Vector2(1299, 242)
+
+[node name="Caja2D26" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(626, 317)
+
+[node name="Caja2D27" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(735, 196)
+
+[node name="Caja2D28" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(540, 397)
+
+[node name="Caja2D50" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(4747, 299)
+
+[node name="Caja2D39" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(4571, 354)
+
+[node name="Caja2D46" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(4314, 359)
+
+[node name="Caja2D40" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3969, 388)
+
+[node name="Caja2D41" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3821, 565)
+
+[node name="Caja2D47" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3821, 565)
+
+[node name="Caja2D42" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3743, 565)
+
+[node name="Caja2D43" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3666, 565)
+
+[node name="Caja2D44" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3591, 565)
+
+[node name="Caja2D45" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(3515, 565)
+
+[node name="Caja2D4" parent="." instance=ExtResource("12_vdoyp")]
+position = Vector2(2244, 269)
+
+[node name="Personaje2d" parent="." groups=["player"] instance=ExtResource("7_d5bou")]
+position = Vector2(56, 204)
+
+[node name="Timer2" type="Timer" parent="Personaje2d"]
+wait_time = 5.596
+one_shot = true
+
+[node name="DeathLabel" type="Label" parent="Personaje2d"]
+visible = false
+custom_minimum_size = Vector2(0, 20)
+offset_left = -645.0
+offset_top = -2210.0
+offset_right = 2080.0
+offset_bottom = -275.0
+text = "HAS MUERTO
+
+REINICIANDO NIVEL ..."
+label_settings = SubResource("LabelSettings_ajjic")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("17_fu3l4")]
+position = Vector2(4854, 444)
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(182, 1.52588e-05)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(4922, 482)
+shape = SubResource("RectangleShape2D_3q6mp")
+
+[node name="TextoDevOps" parent="." instance=ExtResource("20_b3mkq")]
+position = Vector2(4065, 46)
+texto = "[center][b]Principios Fundamentales de DevOps [/b]se basa en varios principios fundamentales que incluyen la automatización, la integración continua, la entrega continua y la monitoreo constante. La automatización reduce los errores humanos y acelera los procesos repetitivos, mientras que la integración continua permite detectar errores rápidamente. La entrega continua asegura que el software esté siempre en un estado desplegable, y el monitoreo constante garantiza que cualquier problema en producción se detecte y solucione rápidament"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextoDevOps"]
+position = Vector2(252, 282.875)
+shape = SubResource("RectangleShape2D_7223i")
+debug_color = Color(0.856442, 0.172386, 0.789455, 0.42)
+
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]
+[connection signal="replacing_by" from="TextoDevOps" to="TextoDevOps" method="_on_replacing_by"]

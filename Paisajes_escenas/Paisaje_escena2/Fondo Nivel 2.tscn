@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp8iy5bqe3s2l"]
+
+[ext_resource type="Texture2D" uid="uid://dh6sfdjbq12wh" path="res://Sprites/freeknight/wintertileset/png/BG/BG.png" id="1_tpy5h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ct5v1"]
+size = Vector2(37.5, 639)
+
+[node name="Fondo Nivel 2" type="StaticBody2D"]
+position = Vector2(-512, -19)
+
+[node name="Bg6" type="Sprite2D" parent="."]
+position = Vector2(1094, 349)
+scale = Vector2(0.638889, 0.727883)
+texture = ExtResource("1_tpy5h")
+
+[node name="Bg7" type="Sprite2D" parent="."]
+position = Vector2(3393, 349)
+scale = Vector2(0.638889, 0.727883)
+texture = ExtResource("1_tpy5h")
+
+[node name="Bg8" type="Sprite2D" parent="."]
+position = Vector2(4543, 349)
+scale = Vector2(0.638889, 0.727883)
+texture = ExtResource("1_tpy5h")
+
+[node name="Bg9" type="Sprite2D" parent="."]
+position = Vector2(2243, 349)
+scale = Vector2(0.638889, 0.727883)
+texture = ExtResource("1_tpy5h")
+
+[node name="Bg10" type="Sprite2D" parent="."]
+position = Vector2(5597, 348)
+scale = Vector2(0.532222, 0.727883)
+texture = ExtResource("1_tpy5h")
+
+[node name="Bg11" type="Sprite2D" parent="."]
+position = Vector2(6554, 348)
+scale = Vector2(0.532222, 0.727883)
+texture = ExtResource("1_tpy5h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(508, 343)
+shape = SubResource("RectangleShape2D_ct5v1")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(508, 343)
+shape = SubResource("RectangleShape2D_ct5v1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(5673, 350)
+shape = SubResource("RectangleShape2D_ct5v1")

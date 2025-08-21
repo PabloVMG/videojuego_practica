@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://xpeabu3rvmgd"]
+
+[ext_resource type="Texture2D" uid="uid://cm6q0vhwt5i55" path="res://Sprites/freeknight/wintertileset/png/Tiles/1.png" id="1_0bkr6"]
+[ext_resource type="Texture2D" uid="uid://cc1dxd0mlq5j" path="res://Sprites/freeknight/wintertileset/png/Tiles/2.png" id="2_0yogu"]
+[ext_resource type="Texture2D" uid="uid://bkfya2yfeon8m" path="res://Sprites/freeknight/wintertileset/png/Tiles/3.png" id="3_5ajn5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uakuc"]
+size = Vector2(500.5, 129)
+
+[node name="Suelo2_1_2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(255.75, 584.5)
+shape = SubResource("RectangleShape2D_uakuc")
+metadata/_edit_group_ = true
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(66, 583)
+texture = ExtResource("1_0bkr6")
+
+[node name="11" type="Sprite2D" parent="."]
+position = Vector2(194, 583)
+texture = ExtResource("2_0yogu")
+
+[node name="12" type="Sprite2D" parent="."]
+position = Vector2(446, 583)
+texture = ExtResource("3_5ajn5")
+
+[node name="17" type="Sprite2D" parent="."]
+position = Vector2(319, 583)
+texture = ExtResource("2_0yogu")

@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://s8fhcuntllhv"]
+
+[ext_resource type="Texture2D" uid="uid://dxcvhlqkk3oji" path="res://Sprites/freeknight/graveyard/png/Tiles/Bone (2).png" id="1_rjuxc"]
+[ext_resource type="Texture2D" uid="uid://dbrn34cqs1obx" path="res://Sprites/freeknight/graveyard/png/Objects/DeadBush.png" id="2_7slp1"]
+[ext_resource type="Texture2D" uid="uid://bxnw2tcxlprpm" path="res://Sprites/freeknight/graveyard/png/Tiles/Bone (4).png" id="4_uce0d"]
+[ext_resource type="Texture2D" uid="uid://ca7pxwlnvct52" path="res://Sprites/freeknight/graveyard/png/Tiles/Bone (3).png" id="5_qgl1l"]
+[ext_resource type="Texture2D" uid="uid://bc7hp6jfo6i86" path="res://Sprites/freeknight/graveyard/png/Tiles/Bone (1).png" id="6_ee37b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3q4k"]
+size = Vector2(893, 40)
+
+[node name="PisoMuerte4" type="StaticBody2D"]
+position = Vector2(-40, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Bone(2)3" type="Sprite2D" parent="."]
+position = Vector2(608, -12)
+texture = ExtResource("1_rjuxc")
+
+[node name="DeadBush6" type="Sprite2D" parent="."]
+position = Vector2(554, -27)
+texture = ExtResource("2_7slp1")
+
+[node name="DeadBush5" type="Sprite2D" parent="."]
+position = Vector2(168, -32)
+texture = ExtResource("2_7slp1")
+
+[node name="DeadBush7" type="Sprite2D" parent="."]
+position = Vector2(779, -15)
+texture = ExtResource("2_7slp1")
+
+[node name="Bone(2)5" type="Sprite2D" parent="."]
+position = Vector2(495, 42)
+texture = ExtResource("1_rjuxc")
+
+[node name="DeadBush" type="Sprite2D" parent="."]
+position = Vector2(20, 39)
+texture = ExtResource("2_7slp1")
+
+[node name="DeadBush2" type="Sprite2D" parent="."]
+position = Vector2(251, 39)
+texture = ExtResource("2_7slp1")
+
+[node name="DeadBush3" type="Sprite2D" parent="."]
+position = Vector2(390, 56)
+texture = ExtResource("2_7slp1")
+
+[node name="Bone(4)" type="Sprite2D" parent="."]
+position = Vector2(-11, 31)
+texture = ExtResource("4_uce0d")
+
+[node name="Bone(3)" type="Sprite2D" parent="."]
+position = Vector2(130, 23)
+texture = ExtResource("5_qgl1l")
+
+[node name="Bone(2)" type="Sprite2D" parent="."]
+position = Vector2(31, 15)
+texture = ExtResource("1_rjuxc")
+
+[node name="Bone(1)" type="Sprite2D" parent="."]
+position = Vector2(393, -5)
+texture = ExtResource("6_ee37b")
+
+[node name="DeadBush4" type="Sprite2D" parent="."]
+position = Vector2(625, 47)
+texture = ExtResource("2_7slp1")
+
+[node name="Bone(3)2" type="Sprite2D" parent="."]
+position = Vector2(633, 13)
+texture = ExtResource("5_qgl1l")
+
+[node name="Bone(2)4" type="Sprite2D" parent="."]
+position = Vector2(804, 36)
+texture = ExtResource("1_rjuxc")
+
+[node name="Bone(3)3" type="Sprite2D" parent="."]
+position = Vector2(263, 11)
+texture = ExtResource("5_qgl1l")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(399.5, 55)
+shape = SubResource("RectangleShape2D_y3q4k")

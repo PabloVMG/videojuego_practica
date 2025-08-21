@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckt24jeblh0k"]
+
+[ext_resource type="Texture2D" uid="uid://e275ytq6ro2k" path="res://Sprites/freeknight/graveyard/png/Objects/ArrowSign.png" id="1_47tud"]
+
+[node name="Letrero" type="StaticBody2D"]
+
+[node name="ArrowSign" type="Sprite2D" parent="."]
+position = Vector2(8, 5)
+texture = ExtResource("1_47tud")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -23.0
+offset_top = -24.0
+offset_right = 19.0
+offset_bottom = 9.0
+rotation = 0.148443
+text = "Inicio"
+horizontal_alignment = 1
+max_lines_visible = 6
+visible_characters = 6

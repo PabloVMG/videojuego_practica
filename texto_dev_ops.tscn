@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv5ssjsi05aoe"]
+
+[ext_resource type="Script" path="res://TextoDevOps.gd" id="1_do2w4"]
+
+[node name="TextoDevOps" type="Area2D"]
+script = ExtResource("1_do2w4")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 658.0
+offset_bottom = 227.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_right = 653.0
+offset_bottom = 218.0
+bbcode_enabled = true
+fit_content = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cobari6ibvaqe"]
+
+[ext_resource type="Texture2D" uid="uid://2umghsvtis0g" path="res://Sprites/freeknight/freetileset/png/Object/Sign_1.png" id="1_58fmr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tencw"]
+font_size = 23
+
+[node name="LetreroDescanso" type="Node2D"]
+position = Vector2(-10, -7)
+
+[node name="Sign1" type="Sprite2D" parent="."]
+position = Vector2(6.125, 12.625)
+scale = Vector2(1.90873, 1.34231)
+texture = ExtResource("1_58fmr")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -47.0
+offset_top = -16.0
+offset_right = 58.0
+offset_bottom = 19.0
+text = "Descanso"
+label_settings = SubResource("LabelSettings_tencw")
+metadata/_edit_use_anchors_ = true

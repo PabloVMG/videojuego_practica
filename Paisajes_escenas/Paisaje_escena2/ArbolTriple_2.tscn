@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://banpkevb1nvpf"]
+
+[ext_resource type="Texture2D" uid="uid://nuf82s8cjqjo" path="res://Sprites/freeknight/wintertileset/png/Object/Tree_1.png" id="1_ic5dx"]
+
+[node name="Arbol_triple" type="StaticBody2D"]
+
+[node name="Tree1" type="Sprite2D" parent="."]
+position = Vector2(-6, -18)
+texture = ExtResource("1_ic5dx")

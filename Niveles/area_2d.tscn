@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://4r4ci2xkqtdh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bkr7e"]
+size = Vector2(300, 154)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_bkr7e")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_left = -365.0
+offset_top = -147.0
+offset_right = 425.0
+offset_bottom = 2.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = -6.0
+offset_top = -12.0
+offset_right = 796.0
+offset_bottom = 156.0
+text = "¿Que es DevOps? 
+DevOps es una metodología que promueve la colaboración entre los equipos de desarrollo 
+(Dev) y operaciones (Ops). En lugar de trabajar por separado, estos equipos trabajan juntos 
+para mejorar la eficiencia y la calidad del software. La colaboración ayuda a reducir conflictos 
+y a alinear objetivos comunes."
+horizontal_alignment = 1
+vertical_alignment = 1

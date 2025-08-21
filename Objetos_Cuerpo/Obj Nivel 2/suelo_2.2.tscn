@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bx27vx6yyx2b"]
+
+[ext_resource type="Texture2D" uid="uid://cm6q0vhwt5i55" path="res://Sprites/freeknight/wintertileset/png/Tiles/1.png" id="1_62f3e"]
+[ext_resource type="Texture2D" uid="uid://cc1dxd0mlq5j" path="res://Sprites/freeknight/wintertileset/png/Tiles/2.png" id="2_e8ptc"]
+[ext_resource type="Texture2D" uid="uid://bkfya2yfeon8m" path="res://Sprites/freeknight/wintertileset/png/Tiles/3.png" id="3_yckan"]
+[ext_resource type="Texture2D" uid="uid://bj5x3ce1oo4co" path="res://Sprites/freeknight/wintertileset/png/Tiles/4.png" id="4_6l2u8"]
+[ext_resource type="Texture2D" uid="uid://cpk8p1rrs25ax" path="res://Sprites/freeknight/wintertileset/png/Tiles/5.png" id="5_mrc0m"]
+[ext_resource type="Texture2D" uid="uid://bwn4mcjf5df28" path="res://Sprites/freeknight/wintertileset/png/Tiles/6.png" id="6_twg2v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uakuc"]
+size = Vector2(500.5, 254.125)
+
+[node name="Suelo2_2_2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(256.75, 520.938)
+shape = SubResource("RectangleShape2D_uakuc")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(67, 456)
+texture = ExtResource("1_62f3e")
+
+[node name="11" type="Sprite2D" parent="."]
+position = Vector2(195, 456)
+texture = ExtResource("2_e8ptc")
+
+[node name="12" type="Sprite2D" parent="."]
+position = Vector2(447, 456)
+texture = ExtResource("3_yckan")
+
+[node name="13" type="Sprite2D" parent="."]
+position = Vector2(67, 582)
+texture = ExtResource("4_6l2u8")
+
+[node name="14" type="Sprite2D" parent="."]
+position = Vector2(195, 584)
+texture = ExtResource("5_mrc0m")
+
+[node name="15" type="Sprite2D" parent="."]
+position = Vector2(320, 584)
+texture = ExtResource("5_mrc0m")
+
+[node name="16" type="Sprite2D" parent="."]
+position = Vector2(448, 584)
+texture = ExtResource("6_twg2v")
+
+[node name="17" type="Sprite2D" parent="."]
+position = Vector2(320, 456)
+texture = ExtResource("2_e8ptc")

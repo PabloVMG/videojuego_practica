@@ -1,0 +1,993 @@
+[gd_scene load_steps=30 format=3 uid="uid://bk2pcb5inabbd"]
+
+[ext_resource type="PackedScene" uid="uid://dmuegu8wchk3b" path="res://Paisajes_escenas/Paisaje_escena4/Fondo Nivel 4.tscn" id="1_pd6ec"]
+[ext_resource type="Script" path="res://Niveles/nivel_4.gd" id="1_x8a04"]
+[ext_resource type="PackedScene" uid="uid://baedonvvcuxvb" path="res://Objetos_Cuerpo/Obj Nivel 4/suelo_4.1.tscn" id="2_luis6"]
+[ext_resource type="Texture2D" uid="uid://5mlc7dms7pq4" path="res://Sprites/freeknight/graveyard/png/Objects/TombStone (1).png" id="2_qru5s"]
+[ext_resource type="Texture2D" uid="uid://l4nnp1ckhrvv" path="res://Sprites/freeknight/graveyard/png/Objects/Skeleton.png" id="3_vibgd"]
+[ext_resource type="PackedScene" uid="uid://bql6roqkdipbc" path="res://Personajes/personaje_2d.tscn" id="3_xvcu7"]
+[ext_resource type="PackedScene" uid="uid://ckt24jeblh0k" path="res://Paisajes_escenas/Paisaje_escena4/letrero_inicio_4.tscn" id="5_dgfvv"]
+[ext_resource type="PackedScene" uid="uid://b18k0x0646m5g" path="res://Objetos_Cuerpo/Obj Nivel 1/Caja.tscn" id="6_12ota"]
+[ext_resource type="PackedScene" uid="uid://5pvhlbtrfvll" path="res://Objetos_Cuerpo/Obj Nivel 4/Suelo_flotando_4.1.tscn" id="7_tnfvx"]
+[ext_resource type="PackedScene" uid="uid://ckibwscju4lw0" path="res://Paisajes_escenas/Paisaje_escena1/letrero_Dragon.tscn" id="9_chfqc"]
+[ext_resource type="Texture2D" uid="uid://c077btafkooxu" path="res://Sprites/freeknight/graveyard/png/Objects/Bush (1).png" id="10_r1aeq"]
+[ext_resource type="Texture2D" uid="uid://dbrn34cqs1obx" path="res://Sprites/freeknight/graveyard/png/Objects/DeadBush.png" id="11_87tn7"]
+[ext_resource type="Texture2D" uid="uid://c417g4ujal23q" path="res://Sprites/freeknight/graveyard/png/Objects/Bush (2).png" id="11_ybghr"]
+[ext_resource type="Texture2D" uid="uid://dbiq76ckh38ia" path="res://Sprites/freeknight/graveyard/png/Objects/TombStone (2).png" id="12_flno4"]
+[ext_resource type="PackedScene" uid="uid://bi2o5hnxmnceh" path="res://Objetos_Cuerpo/Obj Nivel 1/Agua.tscn" id="12_tvko0"]
+[ext_resource type="Texture2D" uid="uid://dslkhto8a2cij" path="res://Sprites/freeknight/graveyard/png/Objects/Tree.png" id="13_hckcu"]
+[ext_resource type="Texture2D" uid="uid://dxcvhlqkk3oji" path="res://Sprites/freeknight/graveyard/png/Tiles/Bone (2).png" id="16_46wqr"]
+[ext_resource type="Texture2D" uid="uid://bxnw2tcxlprpm" path="res://Sprites/freeknight/graveyard/png/Tiles/Bone (4).png" id="17_0b3sk"]
+[ext_resource type="Texture2D" uid="uid://ca7pxwlnvct52" path="res://Sprites/freeknight/graveyard/png/Tiles/Bone (3).png" id="18_w1seu"]
+[ext_resource type="Texture2D" uid="uid://bc7hp6jfo6i86" path="res://Sprites/freeknight/graveyard/png/Tiles/Bone (1).png" id="19_v6f3r"]
+[ext_resource type="PackedScene" uid="uid://crej3k0e3qb2a" path="res://Personajes/Dinosaurio_2d.tscn" id="20_k6orv"]
+[ext_resource type="PackedScene" uid="uid://d37vduyj1anuc" path="res://Objetos_Cuerpo/Obj Nivel 1/suelo_sin imagen.tscn" id="22_mvote"]
+[ext_resource type="PackedScene" uid="uid://dv5ssjsi05aoe" path="res://texto_dev_ops.tscn" id="23_7w6hn"]
+[ext_resource type="Texture2D" uid="uid://c2u6cr6akld8x" path="res://Sprites/freeknight/freetileset/png/Object/Sign_2.png" id="24_wa5lo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8cx8y"]
+line_spacing = 1.0
+font_size = 8
+
+[sub_resource type="FontVariation" id="FontVariation_106fh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_febf4"]
+font = SubResource("FontVariation_106fh")
+font_size = 150
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gy2b3"]
+size = Vector2(33.375, 882)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppls6"]
+size = Vector2(105, 527)
+
+[node name="Nivel4" type="Node2D"]
+position = Vector2(5, 2)
+script = ExtResource("1_x8a04")
+
+[node name="FondoNivel4" parent="." instance=ExtResource("1_pd6ec")]
+position = Vector2(1436, -2)
+
+[node name="Skeleton" type="Sprite2D" parent="."]
+position = Vector2(897, 391)
+texture = ExtResource("3_vibgd")
+
+[node name="Skeleton2" type="Sprite2D" parent="."]
+position = Vector2(2354, 379)
+scale = Vector2(-1.04, 0.970839)
+texture = ExtResource("3_vibgd")
+
+[node name="Skeleton3" type="Sprite2D" parent="."]
+position = Vector2(5690, 495)
+texture = ExtResource("3_vibgd")
+
+[node name="TombStone(1)5" type="Sprite2D" parent="."]
+position = Vector2(87, 507)
+texture = ExtResource("2_qru5s")
+
+[node name="Tree3" type="Sprite2D" parent="."]
+position = Vector2(625, 414)
+texture = ExtResource("13_hckcu")
+
+[node name="Bush(1)" type="Sprite2D" parent="."]
+position = Vector2(1139, 239)
+scale = Vector2(0.472527, 0.555556)
+texture = ExtResource("10_r1aeq")
+
+[node name="Bush(2)" type="Sprite2D" parent="."]
+position = Vector2(1747, 229)
+texture = ExtResource("11_ybghr")
+
+[node name="TombStone(1)" type="Sprite2D" parent="."]
+position = Vector2(2118, 144)
+texture = ExtResource("2_qru5s")
+
+[node name="TombStone(2)" type="Sprite2D" parent="."]
+position = Vector2(1427, 92)
+texture = ExtResource("12_flno4")
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(1936, 358.75)
+scale = Vector2(0.685315, 0.6841)
+texture = ExtResource("13_hckcu")
+
+[node name="Bush(1)2" type="Sprite2D" parent="."]
+position = Vector2(4561, 340)
+scale = Vector2(0.703297, 0.611111)
+texture = ExtResource("10_r1aeq")
+
+[node name="Bush(2)2" type="Sprite2D" parent="."]
+position = Vector2(2883, 440)
+texture = ExtResource("11_ybghr")
+
+[node name="TombStone(1)2" type="Sprite2D" parent="."]
+position = Vector2(2645, 189)
+texture = ExtResource("2_qru5s")
+
+[node name="TombStone(1)6" type="Sprite2D" parent="."]
+position = Vector2(5529, 493.25)
+scale = Vector2(1, 1.00909)
+texture = ExtResource("2_qru5s")
+
+[node name="TombStone(2)2" type="Sprite2D" parent="."]
+position = Vector2(1927.25, 416)
+scale = Vector2(0.801887, 0.657895)
+texture = ExtResource("12_flno4")
+
+[node name="Tree2" type="Sprite2D" parent="."]
+position = Vector2(3681, 403)
+scale = Vector2(0.622378, 0.679916)
+texture = ExtResource("13_hckcu")
+
+[node name="Bush(1)3" type="Sprite2D" parent="."]
+position = Vector2(3317, 115)
+scale = Vector2(0.43956, 0.522222)
+texture = ExtResource("10_r1aeq")
+
+[node name="Bush(2)3" type="Sprite2D" parent="."]
+position = Vector2(4256, 498)
+texture = ExtResource("11_ybghr")
+
+[node name="TombStone(1)3" type="Sprite2D" parent="."]
+position = Vector2(1475, 378)
+texture = ExtResource("2_qru5s")
+
+[node name="TombStone(2)3" type="Sprite2D" parent="."]
+position = Vector2(2427, 366)
+texture = ExtResource("12_flno4")
+
+[node name="Bush(1)4" type="Sprite2D" parent="."]
+position = Vector2(3176, 287)
+scale = Vector2(0.543956, 0.633333)
+texture = ExtResource("10_r1aeq")
+
+[node name="Bush(2)4" type="Sprite2D" parent="."]
+position = Vector2(3967, 340)
+scale = Vector2(0.98, 1.17188)
+texture = ExtResource("11_ybghr")
+
+[node name="TombStone(1)4" type="Sprite2D" parent="."]
+position = Vector2(3904, 350)
+texture = ExtResource("2_qru5s")
+
+[node name="TombStone(2)4" type="Sprite2D" parent="."]
+position = Vector2(3344.25, 110)
+scale = Vector2(0.858491, 0.736842)
+texture = ExtResource("12_flno4")
+
+[node name="Tree4" type="Sprite2D" parent="."]
+position = Vector2(5591, 402)
+texture = ExtResource("13_hckcu")
+
+[node name="Letrero" parent="." instance=ExtResource("5_dgfvv")]
+position = Vector2(158, 486)
+
+[node name="Caja2D" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(340, 497)
+
+[node name="Caja2D18" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(2164, 489)
+
+[node name="Caja2D24" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(2083, 489)
+
+[node name="Caja2D19" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(2854, 339)
+
+[node name="Caja2D23" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(2552, 500)
+
+[node name="Caja2D25" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(2639, 502)
+
+[node name="Caja2D20" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(3327, 483)
+
+[node name="Caja2D30" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(3062, 564)
+
+[node name="Caja2D31" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(3062, 564)
+
+[node name="Caja2D29" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(3505, 511)
+
+[node name="Caja2D27" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(4439, 506)
+
+[node name="Caja2D28" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(4107, 495)
+
+[node name="Caja2D32" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(3823, 554)
+
+[node name="Caja2D26" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(3573, 223)
+
+[node name="Caja2D21" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(4737, 472)
+
+[node name="Caja2D2" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(414, 497)
+
+[node name="Caja2D3" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(488, 497)
+
+[node name="Caja2D4" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(562, 497)
+
+[node name="Caja2D5" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(376, 422)
+
+[node name="Caja2D6" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(450, 422)
+
+[node name="Caja2D7" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(524, 422)
+
+[node name="Caja2D8" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(636, 497)
+
+[node name="Caja2D9" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(598, 422)
+
+[node name="Caja2D10" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(413, 347)
+
+[node name="Caja2D11" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(487, 347)
+
+[node name="Caja2D15" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(1408, 422)
+
+[node name="Caja2D16" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(1482, 422)
+
+[node name="Caja2D17" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(1445, 347)
+
+[node name="Caja2D22" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(1256, 410)
+
+[node name="Caja2D12" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(449, 272)
+
+[node name="Caja2D13" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(561, 347)
+
+[node name="Caja2D14" parent="." instance=ExtResource("6_12ota")]
+position = Vector2(523, 272)
+
+[node name="SueloFlotante3_1_2D" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(999, 432)
+
+[node name="SueloFlotante3_1_2D2" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(1230, 284)
+
+[node name="SueloFlotante3_1_2D3" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(1500, 479)
+
+[node name="SueloFlotante3_1_2D4" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(1807, 271)
+
+[node name="SueloFlotante3_1_2D6" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(1994, 459)
+
+[node name="SueloFlotante3_1_2D7" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(2251, 190)
+
+[node name="SueloFlotante3_1_2D8" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(2473, 420)
+
+[node name="SueloFlotante3_1_2D9" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(4350, 538)
+
+[node name="SueloFlotante3_1_2D5" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(1471, 145)
+
+[node name="SueloFlotante3_1_2D10" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(4639, 368)
+
+[node name="Bush(1)5" type="Sprite2D" parent="."]
+position = Vector2(5821, 156.5)
+scale = Vector2(0.703297, 0.611111)
+texture = ExtResource("10_r1aeq")
+
+[node name="SueloFlotante3_1_2D19" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(5901, 204)
+
+[node name="Bush(1)6" type="Sprite2D" parent="."]
+position = Vector2(5389, 300)
+scale = Vector2(0.703297, 0.611111)
+texture = ExtResource("10_r1aeq")
+
+[node name="SueloFlotante3_1_2D20" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(5456, 359)
+
+[node name="SueloFlotante3_1_2D18" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(4339, 330)
+
+[node name="SueloFlotante3_1_2D11" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(2691, 235)
+
+[node name="SueloFlotante3_1_2D12" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(2939, 491)
+
+[node name="SueloFlotante3_1_2D13" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(3445, 157)
+
+[node name="SueloFlotante3_1_2D16" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(3235, 335)
+
+[node name="SueloFlotante3_1_2D14" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(3769, 500)
+
+[node name="SueloFlotante3_1_2D15" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(4045, 392)
+
+[node name="SueloFlotante3_1_2D17" parent="." instance=ExtResource("7_tnfvx")]
+position = Vector2(5031, 438)
+
+[node name="DeadBush8" type="Sprite2D" parent="."]
+position = Vector2(1346, 558)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush9" type="Sprite2D" parent="."]
+position = Vector2(960, 553)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush10" type="Sprite2D" parent="."]
+position = Vector2(1571, 570)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush15" type="Sprite2D" parent="."]
+position = Vector2(2252, 551)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush16" type="Sprite2D" parent="."]
+position = Vector2(1866, 546)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush22" type="Sprite2D" parent="."]
+position = Vector2(3174, 540)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush23" type="Sprite2D" parent="."]
+position = Vector2(2788, 535)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush29" type="Sprite2D" parent="."]
+position = Vector2(4080, 545)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush30" type="Sprite2D" parent="."]
+position = Vector2(3694, 540)
+texture = ExtResource("11_87tn7")
+
+[node name="SenalSiguienteNivel4" type="Sprite2D" parent="."]
+position = Vector2(5808, 489)
+scale = Vector2(2.03226, 1.60156)
+texture = ExtResource("24_wa5lo")
+
+[node name="Label" type="Label" parent="SenalSiguienteNivel4"]
+anchors_preset = -1
+anchor_left = 0.00268862
+anchor_top = 0.00954625
+anchor_right = 0.135043
+anchor_bottom = 0.00954625
+offset_left = -35.5953
+offset_top = -21.6841
+offset_right = 8.19874
+offset_bottom = 3.31589
+text = "Siguiente
+nivel"
+label_settings = SubResource("LabelSettings_8cx8y")
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Agua9" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(1672, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua9"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua11" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(1544, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua11"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua12" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(1416, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua12"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua13" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(1288, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua13"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua14" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(1161, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua14"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua15" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(1033, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua15"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua16" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(905, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua16"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua32" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(778, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua32"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua10" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(2693, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua10"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua17" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(2565, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua17"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua18" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(2437, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua18"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua19" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(2309, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua19"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua20" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(2182, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua20"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua21" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(2054, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua21"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua22" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(1926, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua22"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua23" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(1798, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua23"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua24" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(3713, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua24"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua25" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(3585, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua25"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua26" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(3457, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua26"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua27" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(3329, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua27"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua28" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(3202, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua28"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua29" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(3074, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua29"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua30" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(2946, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua30"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua33" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(2819, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua33"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua31" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(4734, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua31"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua34" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(4606, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua34"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua35" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(4478, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua35"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua41" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(5119, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua41"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua42" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(4991, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua42"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua43" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(4863, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua43"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua36" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(4350, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua36"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua37" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(4223, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua37"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua38" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(4095, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua38"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua39" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(3967, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua39"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Agua40" parent="." instance=ExtResource("12_tvko0")]
+position = Vector2(3839, 607)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Agua40"]
+visible = false
+build_mode = 1
+polygon = PackedVector2Array(-47, -10, -48, 77, 81, 77, 79, -10)
+
+[node name="Suelo_4_1_2D" parent="." instance=ExtResource("2_luis6")]
+position = Vector2(-44, 19)
+
+[node name="Suelo_4_1_2D2" parent="." instance=ExtResource("2_luis6")]
+position = Vector2(5183, 6)
+
+[node name="Letrero2" parent="." instance=ExtResource("9_chfqc")]
+position = Vector2(4928, 388)
+
+[node name="Personaje2d" parent="." groups=["player"] instance=ExtResource("3_xvcu7")]
+position = Vector2(98.0001, 305)
+
+[node name="Timer2" type="Timer" parent="Personaje2d"]
+wait_time = 5.596
+one_shot = true
+
+[node name="DeathLabel" type="Label" parent="Personaje2d"]
+visible = false
+custom_minimum_size = Vector2(0, 20)
+offset_right = 40.0
+offset_bottom = 23.0
+text = "HAS MUERTO
+
+REINICIANDO NIVEL ..."
+label_settings = SubResource("LabelSettings_febf4")
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Bone(2)6" type="Sprite2D" parent="."]
+position = Vector2(1400, 573)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(2)7" type="Sprite2D" parent="."]
+position = Vector2(1287, 627)
+texture = ExtResource("16_46wqr")
+
+[node name="DeadBush11" type="Sprite2D" parent="."]
+position = Vector2(812, 624)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush12" type="Sprite2D" parent="."]
+position = Vector2(1043, 624)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush13" type="Sprite2D" parent="."]
+position = Vector2(1182, 641)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(4)2" type="Sprite2D" parent="."]
+position = Vector2(781, 616)
+texture = ExtResource("17_0b3sk")
+
+[node name="Bone(3)4" type="Sprite2D" parent="."]
+position = Vector2(922, 608)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)2" type="Sprite2D" parent="."]
+position = Vector2(823, 600)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(1)2" type="Sprite2D" parent="."]
+position = Vector2(1185, 580)
+texture = ExtResource("19_v6f3r")
+
+[node name="DeadBush14" type="Sprite2D" parent="."]
+position = Vector2(1417, 632)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(3)5" type="Sprite2D" parent="."]
+position = Vector2(1425, 598)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)8" type="Sprite2D" parent="."]
+position = Vector2(1596, 621)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(3)6" type="Sprite2D" parent="."]
+position = Vector2(1055, 596)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)9" type="Sprite2D" parent="."]
+position = Vector2(2306, 566)
+texture = ExtResource("16_46wqr")
+
+[node name="DeadBush17" type="Sprite2D" parent="."]
+position = Vector2(2477, 563)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(2)10" type="Sprite2D" parent="."]
+position = Vector2(2193, 620)
+texture = ExtResource("16_46wqr")
+
+[node name="DeadBush18" type="Sprite2D" parent="."]
+position = Vector2(1718, 617)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush19" type="Sprite2D" parent="."]
+position = Vector2(1949, 617)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush20" type="Sprite2D" parent="."]
+position = Vector2(2088, 634)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(4)3" type="Sprite2D" parent="."]
+position = Vector2(1687, 609)
+texture = ExtResource("17_0b3sk")
+
+[node name="Bone(3)7" type="Sprite2D" parent="."]
+position = Vector2(1828, 601)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)3" type="Sprite2D" parent="."]
+position = Vector2(1729, 593)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(1)3" type="Sprite2D" parent="."]
+position = Vector2(2091, 573)
+texture = ExtResource("19_v6f3r")
+
+[node name="DeadBush21" type="Sprite2D" parent="."]
+position = Vector2(2323, 625)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(3)8" type="Sprite2D" parent="."]
+position = Vector2(2331, 591)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)11" type="Sprite2D" parent="."]
+position = Vector2(2502, 614)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(3)9" type="Sprite2D" parent="."]
+position = Vector2(1961, 589)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)12" type="Sprite2D" parent="."]
+position = Vector2(3228, 567)
+texture = ExtResource("16_46wqr")
+
+[node name="DeadBush24" type="Sprite2D" parent="."]
+position = Vector2(3399, 564)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(2)13" type="Sprite2D" parent="."]
+position = Vector2(3115, 609)
+texture = ExtResource("16_46wqr")
+
+[node name="DeadBush25" type="Sprite2D" parent="."]
+position = Vector2(2640, 606)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush26" type="Sprite2D" parent="."]
+position = Vector2(2871, 606)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush27" type="Sprite2D" parent="."]
+position = Vector2(3010, 623)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(4)4" type="Sprite2D" parent="."]
+position = Vector2(2609, 598)
+texture = ExtResource("17_0b3sk")
+
+[node name="Bone(3)10" type="Sprite2D" parent="."]
+position = Vector2(2750, 590)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)4" type="Sprite2D" parent="."]
+position = Vector2(2651, 582)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(1)4" type="Sprite2D" parent="."]
+position = Vector2(3013, 562)
+texture = ExtResource("19_v6f3r")
+
+[node name="DeadBush28" type="Sprite2D" parent="."]
+position = Vector2(3245, 626)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(3)11" type="Sprite2D" parent="."]
+position = Vector2(3253, 592)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)14" type="Sprite2D" parent="."]
+position = Vector2(3424, 615)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(3)12" type="Sprite2D" parent="."]
+position = Vector2(2883, 578)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)15" type="Sprite2D" parent="."]
+position = Vector2(4134, 560)
+texture = ExtResource("16_46wqr")
+
+[node name="DeadBush31" type="Sprite2D" parent="."]
+position = Vector2(4305, 557)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush39" type="Sprite2D" parent="."]
+position = Vector2(4436, 625)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(2)16" type="Sprite2D" parent="."]
+position = Vector2(4021, 614)
+texture = ExtResource("16_46wqr")
+
+[node name="DeadBush32" type="Sprite2D" parent="."]
+position = Vector2(3546, 611)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush33" type="Sprite2D" parent="."]
+position = Vector2(3777, 611)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush34" type="Sprite2D" parent="."]
+position = Vector2(3916, 628)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(4)5" type="Sprite2D" parent="."]
+position = Vector2(3515, 603)
+texture = ExtResource("17_0b3sk")
+
+[node name="Bone(3)13" type="Sprite2D" parent="."]
+position = Vector2(3656, 595)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)5" type="Sprite2D" parent="."]
+position = Vector2(3557, 587)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(1)5" type="Sprite2D" parent="."]
+position = Vector2(3919, 567)
+texture = ExtResource("19_v6f3r")
+
+[node name="DeadBush35" type="Sprite2D" parent="."]
+position = Vector2(4151, 619)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(3)14" type="Sprite2D" parent="."]
+position = Vector2(4159, 585)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)17" type="Sprite2D" parent="."]
+position = Vector2(4330, 608)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(3)15" type="Sprite2D" parent="."]
+position = Vector2(3789, 583)
+texture = ExtResource("18_w1seu")
+
+[node name="DeadBush36" type="Sprite2D" parent="."]
+position = Vector2(4579, 608)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush37" type="Sprite2D" parent="."]
+position = Vector2(4773, 614)
+texture = ExtResource("11_87tn7")
+
+[node name="DeadBush40" type="Sprite2D" parent="."]
+position = Vector2(4913, 585)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(4)6" type="Sprite2D" parent="."]
+position = Vector2(4324, 617)
+texture = ExtResource("17_0b3sk")
+
+[node name="Bone(3)16" type="Sprite2D" parent="."]
+position = Vector2(4465, 609)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)18" type="Sprite2D" parent="."]
+position = Vector2(4420, 583)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(1)6" type="Sprite2D" parent="."]
+position = Vector2(4728, 581)
+texture = ExtResource("19_v6f3r")
+
+[node name="DeadBush38" type="Sprite2D" parent="."]
+position = Vector2(5069, 598)
+texture = ExtResource("11_87tn7")
+
+[node name="Bone(3)17" type="Sprite2D" parent="."]
+position = Vector2(4968, 599)
+texture = ExtResource("18_w1seu")
+
+[node name="Bone(2)19" type="Sprite2D" parent="."]
+position = Vector2(5139, 622)
+texture = ExtResource("16_46wqr")
+
+[node name="Bone(3)18" type="Sprite2D" parent="."]
+position = Vector2(4598, 597)
+texture = ExtResource("18_w1seu")
+
+[node name="Dinosaurio2" parent="." instance=ExtResource("20_k6orv")]
+position = Vector2(5349, 227)
+
+[node name="Dinosaurio3" parent="." instance=ExtResource("20_k6orv")]
+position = Vector2(5765, 70)
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2(1618, -1.99998)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2(4329.69, 82)
+shape = SubResource("RectangleShape2D_gy2b3")
+
+[node name="Suelo2D4" parent="." instance=ExtResource("22_mvote")]
+position = Vector2(-583, 707)
+rotation = -1.57787
+scale = Vector2(0.641924, 0.998944)
+
+[node name="TextoDevOps" parent="." instance=ExtResource("23_7w6hn")]
+position = Vector2(4018, 26)
+texto = "[center][b]Beneficios de DevOps[/b]La adopción de DevOps trae numerosos beneficios a las organizaciones. Entre estos se incluyen la reducción del tiempo de entrega de nuevas funcionalidades, la mejora de la calidad del software, una mayor capacidad de respuesta a los cambios del mercado y la mejora de la fiabilidad del sistema. Además, DevOps fomenta una cultura de responsabilidad compartida y colaboración, lo que resulta en equipos más cohesionados y productivos."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextoDevOps"]
+position = Vector2(238, 228.5)
+shape = SubResource("RectangleShape2D_ppls6")
+debug_color = Color(0.899938, 0.189971, 0.618072, 0.42)
+
+[connection signal="body_entered" from="Area2D4" to="." method="_on_area_2d_4_body_entered"]

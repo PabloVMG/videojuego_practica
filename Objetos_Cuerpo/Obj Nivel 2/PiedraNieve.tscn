@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2ceu36ixjedr"]
+
+[ext_resource type="Texture2D" uid="uid://cb4n2du5dfjol" path="res://Sprites/freeknight/wintertileset/png/Object/Stone.png" id="1_s3ahq"]
+
+[node name="PiedraNieve_2" type="StaticBody2D"]
+
+[node name="Stone" type="Sprite2D" parent="."]
+position = Vector2(-4, -14)
+texture = ExtResource("1_s3ahq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-52, 23, -66, 24, -61, -8, -39, -30, -34, -46, -2, -53, 10, -48, 25, -47, 41, -35, 52, -16, 57, 8, 57, 25, 16, 25, -66, 23)

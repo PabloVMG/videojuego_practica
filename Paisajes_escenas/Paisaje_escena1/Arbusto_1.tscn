@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq8qxppnnk02c"]
+
+[ext_resource type="Texture2D" uid="uid://cwojlxpxwx0c2" path="res://Sprites/freeknight/freetileset/png/Object/Bush (1).png" id="1_adl87"]
+
+[node name="Arbusto_1" type="Node2D"]
+
+[node name="Bush(1)" type="Sprite2D" parent="."]
+position = Vector2(-14.75, -11.75)
+scale = Vector2(1.2218, 1.36154)
+texture = ExtResource("1_adl87")
